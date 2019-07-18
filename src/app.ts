@@ -19,6 +19,7 @@ import * as homeController from "./controllers/home";
 import * as userController from "./controllers/user";
 import * as apiController from "./controllers/api";
 import * as contactController from "./controllers/contact";
+import * as eventController from "./controllers/event";
 
 
 // API keys and Passport configuration
@@ -86,6 +87,7 @@ app.use(
  * Primary app routes.
  */
 app.get("/", homeController.index);
+app.get("/events", eventController.index);
 app.get("/login", userController.getLogin);
 app.post("/login", userController.postLogin);
 app.get("/logout", userController.logout);
