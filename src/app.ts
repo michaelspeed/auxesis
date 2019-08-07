@@ -20,6 +20,13 @@ import * as userController from "./controllers/user";
 import * as apiController from "./controllers/api";
 import * as contactController from "./controllers/contact";
 import * as eventController from "./controllers/event";
+import * as speakerController from "./controllers/speaker";
+import * as sponsorController from "./controllers/sponsor";
+import * as scheduleController from "./controllers/schedule";
+import * as galleryController from "./controllers/gallery";
+import * as teamController from "./controllers/team";
+import * as workshopController from "./controllers/workshop";
+import * as blogController from "./controllers/blog";
 
 
 // API keys and Passport configuration
@@ -27,17 +34,6 @@ import * as passportConfig from "./config/passport";
 
 // Create Express server
 const app = express();
-
-// Connect to MongoDB
-/*const mongoUrl = MONGODB_URI;
-(<any>mongoose).Promise = bluebird;
-
-mongoose.connect(mongoUrl, { useNewUrlParser: true} ).then(
-  () => { /!** ready to use. The `mongoose.connect()` promise resolves to undefined. *!/ },
-).catch(err => {
-  console.log("MongoDB connection error. Please make sure MongoDB is running. " + err);
-  // process.exit();
-});*/
 
 // Express configuration
 app.set("port", process.env.PORT || 3000);
@@ -88,6 +84,17 @@ app.use(
  */
 app.get("/", homeController.index);
 app.get("/events", eventController.index);
+app.get("/contact", contactController.index);
+app.get("/speaker", speakerController.index);
+app.get("/sponsor", sponsorController.index);
+app.get("/schedule", scheduleController.index);
+app.get("/gallery", galleryController.index);
+app.get("/team", teamController.index);
+app.get("/workshop", workshopController.index);
+app.get("/blog", blogController.index);
+
+
+
 app.get("/login", userController.getLogin);
 app.post("/login", userController.postLogin);
 app.get("/logout", userController.logout);
@@ -97,8 +104,6 @@ app.get("/reset/:token", userController.getReset);
 app.post("/reset/:token", userController.postReset);
 app.get("/signup", userController.getSignup);
 app.post("/signup", userController.postSignup);
-app.get("/contact", contactController.getContact);
-app.post("/contact", contactController.postContact);
 app.get("/account", passportConfig.isAuthenticated, userController.getAccount);
 app.post("/account/profile", passportConfig.isAuthenticated, userController.postUpdateProfile);
 app.post("/account/password", passportConfig.isAuthenticated, userController.postUpdatePassword);
