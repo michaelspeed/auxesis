@@ -92,10 +92,11 @@ app.get("/gallery", galleryController.index);
 app.get("/team", teamController.index);
 app.get("/workshop", workshopController.index);
 app.get("/blog", blogController.index);
-
-
-
 app.get("/login", userController.getLogin);
+
+
+
+ // unused
 app.post("/login", userController.postLogin);
 app.get("/logout", userController.logout);
 app.get("/forgot", userController.getForgot);
