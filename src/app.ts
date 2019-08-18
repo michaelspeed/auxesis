@@ -97,7 +97,7 @@ app.get("/login", userController.getLogin);
 
 
  // unused
-app.post("/login", userController.postLogin);
+/*app.post("/login", userController.postLogin);
 app.get("/logout", userController.logout);
 app.get("/forgot", userController.getForgot);
 app.post("/forgot", userController.postForgot);
@@ -109,7 +109,7 @@ app.get("/account", passportConfig.isAuthenticated, userController.getAccount);
 app.post("/account/profile", passportConfig.isAuthenticated, userController.postUpdateProfile);
 app.post("/account/password", passportConfig.isAuthenticated, userController.postUpdatePassword);
 app.post("/account/delete", passportConfig.isAuthenticated, userController.postDeleteAccount);
-app.get("/account/unlink/:provider", passportConfig.isAuthenticated, userController.getOauthUnlink);
+app.get("/account/unlink/:provider", passportConfig.isAuthenticated, userController.getOauthUnlink);*/
 
 /**
  * API examples routes.
