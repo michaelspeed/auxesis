@@ -21,6 +21,7 @@ import * as apiController from "./controllers/api";
 import * as contactController from "./controllers/contact";
 import * as eventController from "./controllers/event";
 import * as speakerController from "./controllers/speaker";
+import * as adroitVieController from "./controllers/adroitVie";
 import * as sponsorController from "./controllers/sponsor";
 import * as scheduleController from "./controllers/schedule";
 import * as galleryController from "./controllers/gallery";
@@ -86,13 +87,13 @@ app.get("/", homeController.index);
 app.get("/events", eventController.index);
 app.get("/contact", contactController.index);
 app.get("/speaker", speakerController.index);
+app.get("/adroitvie", adroitVieController.index);
 app.get("/sponsor", sponsorController.index);
 app.get("/schedule", scheduleController.index);
 app.get("/gallery", galleryController.index);
 app.get("/team", teamController.index);
 app.get("/workshop", workshopController.index);
 app.get("/blog", blogController.index);
-app.get("/login", userController.getLogin);
 
 
 
