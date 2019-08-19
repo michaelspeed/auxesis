@@ -19,7 +19,7 @@ import * as homeController from "./controllers/home";
 import * as userController from "./controllers/user";
 import * as apiController from "./controllers/api";
 import * as contactController from "./controllers/contact";
-import * as eventController from "./controllers/event";
+import * as eventController from "./controllers/events";
 import * as speakerController from "./controllers/speaker";
 import * as adroitVieController from "./controllers/adroitVie";
 import * as sponsorController from "./controllers/sponsor";
