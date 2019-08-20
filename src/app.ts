@@ -28,6 +28,8 @@ import * as galleryController from "./controllers/gallery";
 import * as teamController from "./controllers/team";
 import * as workshopController from "./controllers/workshop";
 import * as blogController from "./controllers/blog";
+import * as webDevelopersControllers from "./controllers/webDevelopers";
+
 
 
 // API keys and Passport configuration
@@ -94,6 +96,8 @@ app.get("/gallery", galleryController.index);
 app.get("/team", teamController.index);
 app.get("/workshop", workshopController.index);
 app.get("/blog", blogController.index);
+app.get("/webdesigners", webDevelopersControllers.index);
+
 
 
 
