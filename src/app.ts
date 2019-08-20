@@ -28,7 +28,17 @@ import * as galleryController from "./controllers/gallery";
 import * as teamController from "./controllers/team";
 import * as workshopController from "./controllers/workshop";
 import * as blogController from "./controllers/blog";
+import * as creativityEventsControllers from "./controllers/CreativityEvents";
+import * as CulturelEventsControllers from "./controllers/CulturelEvents";
+import * as ExhibitionControllers from "./controllers/Exhibitions";
+import * as FunologyControllers from "./controllers/FunologyEvents";
+import * as ManagementControllers from "./controllers/ManagementModule";
+import * as SchoolModuleControllers from "./controllers/SchoolModule";
+import * as SocialControllers from "./controllers/SocialInitiaves";
+import * as SportsControllers from "./controllers/Sports";
+import * as TechnicalControllers from "./controllers/technicalEvents";
 import * as webDevelopersControllers from "./controllers/webDevelopers";
+
 
 
 
@@ -96,7 +106,18 @@ app.get("/gallery", galleryController.index);
 app.get("/team", teamController.index);
 app.get("/workshop", workshopController.index);
 app.get("/blog", blogController.index);
+app.get("/creativity", creativityEventsControllers.index);
+app.get("/cultural", CulturelEventsControllers.index);
+app.get("/exhibitions", ExhibitionControllers.index);
+app.get("/funology", FunologyControllers.index);
+app.get("/management", ManagementControllers.index);
+app.get("/schoolNmodule", SchoolModuleControllers.index);
+app.get("/socialinitiatives", SocialControllers.index);
+app.get("/sports", SportsControllers.index);
+app.get("/technicalevents", TechnicalControllers.index);
 app.get("/webdesigners", webDevelopersControllers.index);
+
+
 
 
 
