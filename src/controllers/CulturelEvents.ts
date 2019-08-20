@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 
 export const index = (req: Request, res: Response) => {
-    res.render("CulturelEvents", {
-        title: "CulturelEvents"
+    res.render("CulturalEvents", {
+        title: "CulturalEvents"
     });
 };
