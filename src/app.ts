@@ -120,7 +120,20 @@ app.post("/workshop/ICEngine", workshopController.icEnginePostSubmit);
 
 app.get("/blog", blogController.index);
 app.get("/creativity", creativityEventsControllers.index);
+
 app.get("/cultural", CulturelEventsControllers.index);
+app.post("/cultural/ranshak", CulturelEventsControllers.ranshakPostSubmit);
+app.post("/cultural/kallestia", CulturelEventsControllers.kallasteiaPostSubmit);
+app.post("/cultural/culturalExchange", CulturelEventsControllers.culturalExchangePostSubmit);
+app.post("/cultural/xobde", CulturelEventsControllers.xobdePostSubmit);
+app.post("/cultural/goStreets", CulturelEventsControllers.goStreetzPostSubmit);
+app.post("/cultural/chromaticWaltz", CulturelEventsControllers.chromaticWaltzPostSubmit);
+app.post("/cultural/Roots", CulturelEventsControllers.rootsPostSubmit);
+app.post("/cultural/euphonics", CulturelEventsControllers.euphonicsPostSubmit);
+
+
+
+
 app.get("/exhibitions", ExhibitionControllers.index);
 app.get("/funology", FunologyControllers.index);
 app.get("/management", ManagementControllers.index);
