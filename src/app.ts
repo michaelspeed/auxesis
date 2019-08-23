@@ -115,6 +115,7 @@ app.get("/schoolNmodule", SchoolModuleControllers.index);
 app.get("/socialinitiatives", SocialControllers.index);
 app.get("/sports", SportsControllers.index);
 app.get("/technicalevents", TechnicalControllers.index);
+app.post("/technicalevents/addavega", TechnicalControllers.postSubmit);
 app.get("/webdesigners", webDevelopersControllers.index);
 
 

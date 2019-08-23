@@ -282,25 +282,32 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-              <div class="input-group mb-3">
+          <form action="/technicalevents/addavega"  method="POST" >
+              <div class="modal-body">
+                <div class="input-group mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">Name</span>
                   </div>
-                  <input type="text" class="form-control" placeholder="our Name" aria-label="Username" aria-describedby="basic-addon1">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="your Name" aria-label="Username" aria-describedby="basic-addon1">
                 </div><br>
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">Email</span>
                   </div>
-                  <input type="text" class="form-control" placeholder="your email" aria-label="Username" aria-describedby="basic-addon1">
+                  <input type="text" class="form-control" id="email" name="email" placeholder="your email" aria-label="Username" aria-describedby="basic-addon1">
                 </div><br>
-                <input type="text" class="form-control" placeholder="Register Fee: 100Rs" aria-label="Username" aria-describedby="basic-addon1" readonly>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Register</button>
-          </div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Registration Fee</span>
+                  </div>
+                  <input type="text" class="form-control" id="regfees" name="regfees" placeholder="200Rs" aria-label="Username" aria-describedby="basic-addon1">
+                </div><br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Register</button>
+              </div>
+          </form>
       </div>
   </div>
 </div>
@@ -321,7 +328,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1">Name</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="your email" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" id='name' placeholder="your email" aria-label="Username" aria-describedby="basic-addon1">
                   </div><br>
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
