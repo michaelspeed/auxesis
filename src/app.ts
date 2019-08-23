@@ -12,6 +12,9 @@ import passport from "passport";
 import bluebird from "bluebird";
 import { MONGODB_URI, SESSION_SECRET } from "./util/secrets";
 
+import * as firebaseadmin from "firebase-admin";
+import serviceAccount from "./aux.json";
+
 const MongoStore = mongo(session);
 
 // Controllers (route handlers)
@@ -40,6 +43,10 @@ import * as TechnicalControllers from "./controllers/technicalEvents";
 import * as webDevelopersControllers from "./controllers/webDevelopers";
 
 
+export const defaultApp = firebaseadmin.initializeApp({
+    credential: firebaseadmin.credential.cert(serviceAccount as any),
+    databaseURL: "https://auxesis-v9.firebaseio.com"
+  });
 
 
 // API keys and Passport configuration
@@ -104,7 +111,13 @@ app.get("/sponsor", sponsorController.index);
 app.get("/schedule", scheduleController.index);
 app.get("/gallery", galleryController.index);
 app.get("/team", teamController.index);
+
 app.get("/workshop", workshopController.index);
+app.post("/workshop/IOS", workshopController.IOSPostSubmit);
+app.post("/workshop/Robotics", workshopController.roboticsPostSubmit);
+app.post("/workshop/ICEngine", workshopController.icEnginePostSubmit);
+
+
 app.get("/blog", blogController.index);
 app.get("/creativity", creativityEventsControllers.index);
 app.get("/cultural", CulturelEventsControllers.index);
