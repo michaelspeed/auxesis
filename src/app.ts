@@ -104,7 +104,10 @@ app.use(
  */
 app.get("/", homeController.index);
 app.get("/events", eventController.index);
+
 app.get("/contact", contactController.index);
+app.post("/contact/message", contactController.contactPostSubmit);
+
 app.get("/speaker", speakerController.index);
 app.get("/adroitvie", adroitVieController.index);
 app.get("/sponsor", sponsorController.index);
@@ -119,7 +122,15 @@ app.post("/workshop/ICEngine", workshopController.icEnginePostSubmit);
 
 
 app.get("/blog", blogController.index);
+
 app.get("/creativity", creativityEventsControllers.index);
+app.post("/creativity/candid", creativityEventsControllers.candidPostSubmit);
+app.post("/creativity/waste", creativityEventsControllers.wastePostSubmit);
+app.post("/creativity/doodling", creativityEventsControllers.doodlingPostSubmit);
+app.post("/creativity/mega", creativityEventsControllers.megaPixelPostSubmit);
+app.post("/creativity/grafity", creativityEventsControllers.grafityPostSubmit);
+app.post("/creativity/treasure", creativityEventsControllers.treasureHuntPostSubmit);
+
 
 app.get("/cultural", CulturelEventsControllers.index);
 app.post("/cultural/ranshak", CulturelEventsControllers.ranshakPostSubmit);

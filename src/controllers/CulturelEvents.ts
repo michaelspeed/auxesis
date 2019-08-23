@@ -10,8 +10,7 @@ export const index = (req: Request, res: Response) => {
 export const ranshakPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
-    const phoneNum =req.body.cn;
-
+    const phoneNum = req.body.cn;
     console.log(req);
     defaultApp.firestore().collection("ranshak")
         .add({
@@ -28,8 +27,7 @@ export const ranshakPostSubmit = (req: Request, res: Response) => {
 export const kallasteiaPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
-    const phoneNum =req.body.cn;
-    
+    const phoneNum = req.body.cn;
     console.log(req);
     defaultApp.firestore().collection("kallasteria")
         .add({
@@ -47,8 +45,7 @@ export const kallasteiaPostSubmit = (req: Request, res: Response) => {
 export const culturalExchangePostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
-    const phoneNum =req.body.cn;
-
+    const phoneNum = req.body.cn;
     console.log(req);
     defaultApp.firestore().collection("culturalExchange")
         .add({
@@ -65,8 +62,7 @@ export const culturalExchangePostSubmit = (req: Request, res: Response) => {
 export const xobdePostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
-    const phoneNum =req.body.cn;
-
+    const phoneNum = req.body.cn;
     console.log(req);
     defaultApp.firestore().collection("xobde")
         .add({
@@ -83,8 +79,7 @@ export const xobdePostSubmit = (req: Request, res: Response) => {
 export const goStreetzPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
-    const phoneNum =req.body.cn;
-
+    const phoneNum = req.body.cn;
     console.log(req);
     defaultApp.firestore().collection("goStreetz")
         .add({
@@ -101,7 +96,7 @@ export const goStreetzPostSubmit = (req: Request, res: Response) => {
 export const euphonicsPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
-    const phoneNum =req.body.cn;
+    const phoneNum = req.body.cn;
     console.log(req);
     defaultApp.firestore().collection("euphonics")
         .add({
@@ -118,7 +113,7 @@ export const euphonicsPostSubmit = (req: Request, res: Response) => {
 export const chromaticWaltzPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
-    const phoneNum =req.body.cn;
+    const phoneNum = req.body.cn;
 
     console.log(req);
     defaultApp.firestore().collection("chromaticWatls")
@@ -137,7 +132,7 @@ export const chromaticWaltzPostSubmit = (req: Request, res: Response) => {
 export const rootsPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
-    const phoneNum =req.body.cn;
+    const phoneNum = req.body.cn;
 
     console.log(req);
     defaultApp.firestore().collection("Roots")
