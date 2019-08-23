@@ -16,9 +16,9 @@ export const postSubmit = (req: Request, res: Response) => {
             name,
             email
         }).then(value => {
-            res.redirect("/");
+            res.redirect("/success");
         }).catch(error => {
-            res.render("error", {error: error});
+            res.render("/error");
         });
 };
 
@@ -33,9 +33,9 @@ export const devPostSubmit = (req: Request, res: Response) => {
             email,
             project
         }).then(value => {
-            res.redirect("/");
+            res.redirect("/success");
         }).catch(error => {
-            res.render("error", {error: error});
+            res.render("/error");
         });
 };
 
@@ -48,9 +48,9 @@ export const roboAssultPostSubmit = (req: Request, res: Response) => {
             name,
             email
         }).then(value => {
-            res.redirect("/");
+            res.redirect("/success");
         }).catch(error => {
-            res.render("error", {error: error});
+            res.render("/error");
         });
 };
 
@@ -63,9 +63,9 @@ export const roboSoccerPostSubmit = (req: Request, res: Response) => {
             name,
             email
         }).then(value => {
-            res.redirect("/");
+            res.redirect("/success");
         }).catch(error => {
-            res.render("error", {error: error});
+            res.render("/error");
         });
 };
 
@@ -78,9 +78,9 @@ export const SurvivorBotPostSubmit = (req: Request, res: Response) => {
             name,
             email
         }).then(value => {
-            res.redirect("/");
+            res.redirect("/success");
         }).catch(error => {
-            res.render("error", {error: error});
+            res.render("/error");
         });
 };
 
@@ -94,9 +94,9 @@ export const cubiconPostSubmit = (req: Request, res: Response) => {
             name,
             email,
         }).then(value => {
-            res.redirect("/");
+            res.redirect("/success");
         }).catch(error => {
-            res.render("error", {error: error});
+            res.render("/error");
         });
 };
 
@@ -111,8 +111,8 @@ export const techExPostSubmit = (req: Request, res: Response) => {
             email,
             project
         }).then(value => {
-            res.redirect("/");
+            res.redirect("/success");
         }).catch(error => {
-            res.render("error", {error: error});
+            res.render("/error");
         });
 };

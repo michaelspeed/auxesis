@@ -41,6 +41,10 @@ import * as SocialControllers from "./controllers/SocialInitiaves";
 import * as SportsControllers from "./controllers/Sports";
 import * as TechnicalControllers from "./controllers/technicalEvents";
 import * as webDevelopersControllers from "./controllers/webDevelopers";
+import * as ErrorControllers from "./controllers/Error";
+import * as successControllers from "./controllers/Success";
+
+
 
 
 export const defaultApp = firebaseadmin.initializeApp({
@@ -105,6 +109,10 @@ app.use(
 app.get("/", homeController.index);
 app.get("/events", eventController.index);
 
+app.get("/error", ErrorControllers.index);
+app.get("/success", successControllers.index);
+
+
 app.get("/contact", contactController.index);
 app.post("/contact/message", contactController.contactPostSubmit);
 
@@ -162,7 +170,13 @@ app.post("/schoolNmodule/cine", SchoolModuleControllers.cineVisionPostSubmit);
 
 
 app.get("/socialinitiatives", SocialControllers.index);
+
 app.get("/sports", SportsControllers.index);
+app.post("/sports/hatrick", SportsControllers.hatrickPostSubmit);
+app.post("/sports/thirdPocket", SportsControllers.thirdPocketPostSubmit);
+app.post("/sports/tennis", SportsControllers.tennisPostSubmit);
+app.post("/sports/Joga", SportsControllers.JogaPostSubmit);
+
 
 app.get("/technicalevents", TechnicalControllers.index);
 app.post("/technicalevents/addavega", TechnicalControllers.postSubmit);

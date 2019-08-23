@@ -7,7 +7,6 @@ export const index = (req: Request, res: Response) => {
     });
 };
 
-
 export const IOSPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
@@ -17,12 +16,11 @@ export const IOSPostSubmit = (req: Request, res: Response) => {
             name,
             email,
         }).then(value => {
-            res.redirect("/");
+            res.redirect("/success");
         }).catch(error => {
-            res.render("error", {error: error});
+            res.render("/error");
         });
 };
-
 
 export const roboticsPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
@@ -33,9 +31,9 @@ export const roboticsPostSubmit = (req: Request, res: Response) => {
             name,
             email,
         }).then(value => {
-            res.redirect("/");
+            res.redirect("/success");
         }).catch(error => {
-            res.render("error", {error: error});
+            res.render("/error");
         });
 };
 
@@ -48,8 +46,8 @@ export const icEnginePostSubmit = (req: Request, res: Response) => {
             name,
             email,
         }).then(value => {
-            res.redirect("/");
+            res.redirect("/success");
         }).catch(error => {
-            res.render("error", {error: error});
+            res.render("/error");
         });
 };

@@ -2965,3 +2965,12 @@ s .process span:before {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.errorcontainerSelf{
+  margin:0;
+  padding:0;
+  align-items:center;
+  justify-content:center;
+  text-align: center;
+}
+

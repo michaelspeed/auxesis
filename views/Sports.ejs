@@ -116,7 +116,7 @@
              <div class="inner">
               <h3><span>Hattrick</span></h3>
                 <div class="custom-link wow fadeIn">
-                    <a href="#" data-toggle="modal" data-target="#exampleModalScrollable">
+                    <a href="#" data-toggle="modal" data-target="#exampleModalScrollableHattrick">
                         <div class="lines"> <span></span> <span></span> </div>
                         <!-- end lines -->
                         <b>Register Here</b>
@@ -140,7 +140,7 @@
             <div class="inner">
               <h3><span>Third</span>Pocket</h3>
               <div class="custom-link wow fadeIn">
-                    <a href="#" data-toggle="modal" data-target="#exampleModalScrollable">
+                    <a href="#" data-toggle="modal" data-target="#exampleModalScrollableThirdPocket">
                         <div class="lines"> <span></span> <span></span> </div>
                         <!-- end lines -->
                         <b>Register Here</b>
@@ -162,7 +162,7 @@
               <div class="inner">
                 <h3><span>Tennis</span></h3>
                 <div class="custom-link wow fadeIn">
-                      <a href="#" data-toggle="modal" data-target="#exampleModalScrollable">
+                      <a href="#" data-toggle="modal" data-target="#exampleModalScrollableTennis">
                           <div class="lines"> <span></span> <span></span> </div>
                           <!-- end lines -->
                           <b>Register Here</b>
@@ -184,7 +184,7 @@
               <div class="inner">
                 <h3><span>Joga</span>Bonito</h3>
                 <div class="custom-link wow fadeIn">
-                      <a href="#" data-toggle="modal" data-target="#exampleModalScrollable">
+                      <a href="#" data-toggle="modal" data-target="#exampleModalScrollableJoga">
                           <div class="lines"> <span></span> <span></span> </div>
                           <!-- end lines -->
                           <b>Register Here</b>
@@ -202,48 +202,198 @@
 </section>
 
 <!-- regsistrations -->
-<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+<div class="modal fade" id="exampleModalScrollableHattrick" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable" role="document">
         <div class="modal-content">
             <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalScrollableTitle">Hattrick</h5>
+            <h5 class="modal-title" id="exampleModalScrollableTitle">Hattrick Registration</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
+            <form action="/sports/hatrick" method="POST">
             <div class="modal-body">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1">Name</span>
                     </div>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                </div><br>
-                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="" id="name" name="name" aria-label="Username" aria-describedby="basic-addon1">
+                  </div><br>
+                  <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1">Email</span>
                     </div>
-                    <input type="text" class="form-control" id="email" name="email" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                </div><br>
-                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="" id="email" name="email" aria-label="Username" aria-describedby="basic-addon1">
+                  </div> <br>
+                  <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1">Contact Number</span>
                     </div>
-                    <input type="text" class="form-control" id="cn" name="cn" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                </div><br>
-                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="" id="cn" name="cn" aria-label="Username" aria-describedby="basic-addon1">
+                  </div><br>
+                  <div class="input-group mb-3">
                       <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Registration Fee</span>
                       </div>
                       <input type="text" class="form-control" placeholder="100Rs" aria-label="Username" aria-describedby="basic-addon1" readonly>
-                </div><br>
+                  </div><br>
+                
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" data-dismiss="modal">Register</button>
+              <button type="submit" class="btn btn-primary">Register</button>
             </div>
+            </form>
         </div>
     </div>
   </div>
+
+
+<!-- regsistrations -->
+<div class="modal fade" id="exampleModalScrollableThirdPocket" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalScrollableTitle">Third Pocket Registration</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form action="/sports/thirdPocket" method="POST">
+
+          <div class="modal-body">
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Name</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="" id="name" name="name" aria-label="Username" aria-describedby="basic-addon1">
+                </div><br>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Email</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="" id="email" name="email" aria-label="Username" aria-describedby="basic-addon1">
+                </div> <br>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Contact Number</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="" id="cn" name="cn" aria-label="Username" aria-describedby="basic-addon1">
+                </div><br>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Registration Fee</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="100Rs" aria-label="Username" aria-describedby="basic-addon1" readonly>
+                </div><br>
+              
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Register</button>
+          </div>
+          </form>
+      </div>
+  </div>
+</div>
+
+
+<!-- regsistrations -->
+<div class="modal fade" id="exampleModalScrollableTennis" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalScrollableTitle">Tennis Registration</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form action="/sports/tennis" method="POST">
+
+          <div class="modal-body">
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Name</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="" id="name" name="name" aria-label="Username" aria-describedby="basic-addon1">
+                </div><br>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Email</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="" id="email" name="email" aria-label="Username" aria-describedby="basic-addon1">
+                </div> <br>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Contact Number</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="" id="cn" name="cn" aria-label="Username" aria-describedby="basic-addon1">
+                </div><br>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Registration Fee</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="100Rs" aria-label="Username" aria-describedby="basic-addon1" readonly>
+                </div><br>
+              
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Register</button>
+          </div>
+          </form>
+      </div>
+  </div>
+</div>
+
+
+<!-- regsistrations -->
+<div class="modal fade" id="exampleModalScrollableJoga" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalScrollableTitle">Joga Bonito Registration</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form action="/sports/Joga" method="POST">
+
+          <div class="modal-body">
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Name</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="" id="name" name="name" aria-label="Username" aria-describedby="basic-addon1">
+                </div><br>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Email</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="" id="email" name="email" aria-label="Username" aria-describedby="basic-addon1">
+                </div> <br>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Contact Number</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="" id="cn" name="cn" aria-label="Username" aria-describedby="basic-addon1">
+                </div><br>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Registration Fee</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="100Rs" aria-label="Username" aria-describedby="basic-addon1" readonly>
+                </div><br>
+              
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Register</button>
+          </div>
+          </form>
+      </div>
+  </div>
+</div>
 <!-- footer start  -->
 <%- include('./include/footer.ejs') %>
 <!-- end footer -->
