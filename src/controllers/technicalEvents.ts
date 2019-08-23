@@ -27,3 +27,98 @@ export const postSubmit = (req: Request, res: Response) => {
             res.render("error", {error: error});
         });
 };
+
+export const devPostSubmit = (req: Request, res: Response) => {
+    const name = req.body.name;
+    const email = req.body.email;
+    const project = req.body.project;
+    console.log(req);
+    firebaseadmin.firestore().collection("developerConference")
+        .add({
+            name,
+            email,
+            project
+        }).then(value => {
+            res.redirect("/");
+        }).catch(error => {
+            res.render("error", {error: error});
+        });
+};
+
+export const roboAssultPostSubmit = (req: Request, res: Response) => {
+    const name = req.body.name;
+    const email = req.body.email;
+    console.log(req);
+    firebaseadmin.firestore().collection("roboAssult")
+        .add({
+            name,
+            email
+        }).then(value => {
+            res.redirect("/");
+        }).catch(error => {
+            res.render("error", {error: error});
+        });
+};
+
+export const roboSoccerPostSubmit = (req: Request, res: Response) => {
+    const name = req.body.name;
+    const email = req.body.email;
+    console.log(req);
+    firebaseadmin.firestore().collection("roboSoccer")
+        .add({
+            name,
+            email
+        }).then(value => {
+            res.redirect("/");
+        }).catch(error => {
+            res.render("error", {error: error});
+        });
+};
+
+export const SurvivorBotPostSubmit = (req: Request, res: Response) => {
+    const name = req.body.name;
+    const email = req.body.email;
+    console.log(req);
+    firebaseadmin.firestore().collection("survivorBot")
+        .add({
+            name,
+            email
+        }).then(value => {
+            res.redirect("/");
+        }).catch(error => {
+            res.render("error", {error: error});
+        });
+};
+
+export const cubiconPostSubmit = (req: Request, res: Response) => {
+    const name = req.body.name;
+    const email = req.body.email;
+
+    console.log(req);
+    firebaseadmin.firestore().collection("cubicon")
+        .add({
+            name,
+            email,
+        }).then(value => {
+            res.redirect("/");
+        }).catch(error => {
+            res.render("error", {error: error});
+        });
+};
+
+export const techExPostSubmit = (req: Request, res: Response) => {
+    const name = req.body.name;
+    const email = req.body.email;
+    const project = req.body.project;
+    console.log(req);
+    firebaseadmin.firestore().collection("techExhibition")
+        .add({
+            name,
+            email,
+            project
+        }).then(value => {
+            res.redirect("/");
+        }).catch(error => {
+            res.render("error", {error: error});
+        });
+};

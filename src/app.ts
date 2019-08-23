@@ -114,8 +114,18 @@ app.get("/management", ManagementControllers.index);
 app.get("/schoolNmodule", SchoolModuleControllers.index);
 app.get("/socialinitiatives", SocialControllers.index);
 app.get("/sports", SportsControllers.index);
+
 app.get("/technicalevents", TechnicalControllers.index);
 app.post("/technicalevents/addavega", TechnicalControllers.postSubmit);
+app.post("/technicalevents/addDevelopers", TechnicalControllers.devPostSubmit);
+app.post("/technicalevents/roboAssult", TechnicalControllers.roboAssultPostSubmit);
+app.post("/technicalevents/roboSoccer", TechnicalControllers.roboSoccerPostSubmit);
+app.post("/technicalevents/survivorbot", TechnicalControllers.SurvivorBotPostSubmit);
+app.post("/technicalevents/cubicon", TechnicalControllers.cubiconPostSubmit);
+app.post("/technicalevents/techExhibition", TechnicalControllers.techExPostSubmit);
+
+
+
 app.get("/webdesigners", webDevelopersControllers.index);
 
 

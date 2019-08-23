@@ -162,17 +162,24 @@
            </a>
           </figure>
           <div class="content-box">
-            <div class="inner">
-              <h3><span>Robo </span>Soccer</h3>
-              <div class="custom-link wow fadeIn">
-                    <a href="#" data-toggle="modal" data-target="#exampleModalScrollableRoboSoccer">
-                        <div class="lines"> <span></span> <span></span> </div>
-                        <!-- end lines -->
-                        <b>Register Here</b>
-                    </a>
+              <div class="inner">
+                  <h3><span>Robo </span>Soccer</h3>
+                  <div class="custom-link wow fadeIn">
+                        <a href="#" data-toggle="modal" data-target="#exampleModalScrollableRoboSoccerRules">
+                            <div class="lines"> <span></span> <span></span> </div>
+                            <!-- end lines -->
+                            <b>Rules</b>
+                        </a>
+                  </div>
+                  <div class="custom-link wow fadeIn">
+                      <a href="#" data-toggle="modal" data-target="#exampleModalScrollableRoboSoccer">
+                          <div class="lines"> <span></span> <span></span> </div>
+                          <!-- end lines -->
+                          <b>Register Here</b>
+                      </a>
+                  </div>
+                  <!-- end custom-link --> 
                 </div>
-              <!-- end custom-link --> 
-            </div>
             <!-- end inner --> 
           </div>
           <!-- end content-box --> 
@@ -188,12 +195,19 @@
             <div class="inner">
               <h3><span>Survivor </span>Bot</h3>
               <div class="custom-link wow fadeIn">
-                    <a href="#" data-toggle="modal" data-target="#exampleModalScrollableSurvivor">
+                    <a href="#" data-toggle="modal" data-target="#exampleModalScrollableSurvivorRules">
                         <div class="lines"> <span></span> <span></span> </div>
                         <!-- end lines -->
-                        <b>Register Here</b>
+                        <b>Rules</b>
                     </a>
-                </div>
+              </div>
+              <div class="custom-link wow fadeIn">
+                  <a href="#" data-toggle="modal" data-target="#exampleModalScrollableSurvivor">
+                      <div class="lines"> <span></span> <span></span> </div>
+                      <!-- end lines -->
+                      <b>Register Here</b>
+                  </a>
+              </div>
               <!-- end custom-link --> 
             </div>
             <!-- end inner --> 
@@ -232,7 +246,7 @@
             <div class="inner">
               <h3><span>Technical</span>Exhibition</h3>
               <div class="custom-link wow fadeIn">
-                    <a href="#" data-toggle="modal" data-target="#exampleModalScrollableDevloper">
+                    <a href="#" data-toggle="modal" data-target="#exampleModalScrollableTech">
                         <div class="lines"> <span></span> <span></span> </div>
                         <!-- end lines -->
                         <b>Register Here</b>
@@ -259,6 +273,13 @@
             <div class="inner">
               <h3><span>Cubicon</span>Solve the Cube </h3>
               <div class="custom-link wow fadeIn">
+                <a href="#" data-toggle="modal" data-target="#exampleModalScrollableRubicRules">
+                    <div class="lines"> <span></span> <span></span> </div>
+                    <!-- end lines -->
+                    <b>Rules</b>
+                </a>
+            </div>
+            <div class="custom-link wow fadeIn">
                 <a href="#" data-toggle="modal" data-target="#exampleModalScrollableRubic">
                     <div class="lines"> <span></span> <span></span> </div>
                     <!-- end lines -->
@@ -282,6 +303,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
+
           <form action="/technicalevents/addavega"  method="POST" >
               <div class="modal-body">
                 <div class="input-group mb-3">
@@ -318,35 +340,81 @@
     <div class="modal-dialog modal-dialog-scrollable" role="document">
         <div class="modal-content">
             <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalScrollableTitle">Technical Events</h5>
+            <h5 class="modal-title" id="exampleModalScrollableTitle">Robo Assult Registration</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
+
+            <form action="/technicalevents/roboAssult"  method="POST" >
+              <div class="modal-body">
                 <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1">Name</span>
-                    </div>
-                    <input type="text" class="form-control" id='name' placeholder="your email" aria-label="Username" aria-describedby="basic-addon1">
-                  </div><br>
-                  <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1">Email</span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="your email" aria-label="Username" aria-describedby="basic-addon1">
-                  </div><br>
-                  <div class="input-group mb-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">Registration Fee</span>
-                      </div>
-                      <input type="text" class="form-control" placeholder="100Rs" aria-label="Username" aria-describedby="basic-addon1" readonly>
-                  </div><br>
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Name</span>
+                  </div>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="your Name" aria-label="Username" aria-describedby="basic-addon1">
+                </div><br>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Email</span>
+                  </div>
+                  <input type="text" class="form-control" id="email" name="email" placeholder="your email" aria-label="Username" aria-describedby="basic-addon1">
+                </div><br>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Registration Fee</span>
+                  </div>
+                  <input type="text" class="form-control" id="regfees" name="regfees" placeholder="200Rs" aria-label="Username" aria-describedby="basic-addon1">
+                </div><br>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Register</button>
+              </div>
+          </form>
+        </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="exampleModalScrollableRoboSoccerRules" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalScrollableTitle">Robo Soccer Registration</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" data-dismiss="modal">Register</button>
+
+            <div>ROBOT SPECIFICATION-
+              <li> The maximum dimension of the two robots can be 25cm x 20cm (l x b). Height
+                is as per your convenience.</li>
+              <li>Each robot should not weight more than 3.5kg.</li>
+              <li>The maximum voltage across any two terminals should not be more than
+                  12volts.</li>
+              <li>The robot may be wired or wireless.</li>
+              <li>Readymade gearboxes and wheels can be used. Use of Lego kits for any
+                  purpose is not allowed.</li>
+              <li>Participants can use their own mechanism for kicking or pushing the ball.
+                  After attachment of mechanism the bot should not exceed its maximum
+                  dimension limit.</li>
+              <li>All connections should be made safe to prevent short circuits and battery
+                  fires. Any unsafe circuitry may be asked to replace, failure to do so may lead to
+                  disqualification.</li>
             </div>
+            <br>
+            <div>Rules-
+            <li> Each team has to make their robots under the specifications given above.</li>
+            <li>Each team can be consists of maximum 4 members.</li>
+            <li>The necessary rules for playing the match will be explained on the day of
+                event.
+            </li>
+            <li>The decisions of the event judges will be the final decision and every team
+                must follow it, failing to comply with the decision will lead to disqualification.
+            </li>
+            </div><br><br>
         </div>
     </div>
   </div>
@@ -356,130 +424,45 @@
   <div class="modal-dialog modal-dialog-scrollable" role="document">
       <div class="modal-content">
           <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalScrollableTitle">Technical Events</h5>
+          <h5 class="modal-title" id="exampleModalScrollableTitle">Robo Soccer Registration</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-              <div>ROBOT SPECIFICATION-
-                  <li> The maximum dimension of the two robots can be 25cm x 20cm (l x b). Height
-                    is as per your convenience.</li>
-                    <li>Each robot should not weight more than 3.5kg.</li>
-                    <li>The maximum voltage across any two terminals should not be more than
-                      12volts.</li>
-                    <li>The robot may be wired or wireless.</li>
-                    <li>Readymade gearboxes and wheels can be used. Use of Lego kits for any
-                      purpose is not allowed.</li>
-                      <li>Participants can use their own mechanism for kicking or pushing the ball.
-                        After attachment of mechanism the bot should not exceed its maximum
-                        dimension limit.</li>
-                        <li>All connections should be made safe to prevent short circuits and battery
-                          fires. Any unsafe circuitry may be asked to replace, failure to do so may lead to
-                          disqualification.</li>
-                </div>
-                   <br>
-                  <div>Rules-
-                  <li> Each team has to make their robots under the specifications given above.</li>
-                    <li>Each team can be consists of maximum 4 members.</li>
-                    <li>The necessary rules for playing the match will be explained on the day of
-                      event.</li>
-                    <li>The decisions of the event judges will be the final decision and every team
-                      must follow it, failing to comply with the decision will lead to disqualification.</li>
-                </div><br><br>
-              <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">Name</span>
-                  </div>
-                  <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                </div><br>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">Email</span>
-                  </div>
-                  <input type="text" class="form-control" placeholder="your email" aria-label="Username" aria-describedby="basic-addon1">
-                </div><br>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1">Registration Fee</span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="100Rs" aria-label="Username" aria-describedby="basic-addon1" readonly>
-                </div><br>
-                
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Register</button>
-          </div>
-      </div>
-  </div>
-</div>
-
-   <!-- regsistrations -->
-<div class="modal fade" id="exampleModalScrollableR2" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalScrollableTitle">Technical Events</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <div>ROBOT SPECIFICATION-
-                    <li> The maximum dimension of the robot can be 30cm x 30cm (l x b). Height is
-                        as per your convenience. </li>
-                      <li>Each robot should not weight more than 3.5kg.</li>
-                      <li>The maximum voltage across any two terminals should not be more than
-                          12volts.</li>
-                      <li>The robot may be wired or wireless.</li>
-                      <li>Readymade gearboxes and wheels can be used. Use of Lego kits for any
-                        purpose is not allowed.</li>
-                          <li>All connections should be made safe to prevent short circuits and battery
-                            fires. Any unsafe circuitry may be asked to replace, failure to do so may lead to
-                            disqualification.</li>
-                  </div>
-                     <br>
-                    <div>Rules-
-                    <li> Each team has to make their robots under the specifications given above.</li>
-                      <li>Each team can be consists of maximum 4 members. Students from different
-                          institutes can form a team. </li>
-                      <li>The necessary rules for playing the match will be explained on the day of
-                        event.</li>
-                      <li> Skipping of the obstacles etc. will lead to penalty.
-                          The decisions of the event judges will be the final and binding, failing to comply
-                          will lead to disqualification. </li>
-                  </div><br><br>
+          <form  action="/technicalevents/roboSoccer"  method="POST" >
+                <div class="modal-body">
                   <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1">Name</span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Name</span>
+                      </div>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
                   </div><br>
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1">Email</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="your email" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" id="email" name="email" placeholder="your email" aria-label="Username" aria-describedby="basic-addon1">
                   </div><br>
-                  <div class="input-group mb-3">
+                    <div class="input-group mb-3">
                       <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Registration Fee</span>
                       </div>
                       <input type="text" class="form-control" placeholder="100Rs" aria-label="Username" aria-describedby="basic-addon1" readonly>
-                  </div><br>
-                  
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" data-dismiss="modal">Register</button>
-            </div>
-        </div>
-    </div>
+                    </div><br>
+              </div> 
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary" >Register</button>
+              </div>           
+          </form>
+          
+          
+      </div>
   </div>
-   
-    <!-- regsistrations -->
-<div class="modal fade" id="exampleModalScrollableSurvivor" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+</div>
+
+   <!-- regsistrations -->
+<div class="modal fade" id="exampleModalScrollableSurvivorRules" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -488,70 +471,82 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
-                <div>ROBOT SPECIFICATION-
-                    <li> The maximum dimension of the robot can be 30 x 25 cm2 (l x b). Height is as
-                        per your convenience.</li>
-                        <li> The robot should not weigh more than 4 kg.</li>
-                        <li> Weapons are allowed but it should not harm the spectators.</li>
-                        <li> Any type of chemical or projectile actions can’t be used.</li>
-                        <li> The voltage across any two terminals must not be more than 24 volts at any
-                        point of the competition.</li>
-                        <li> The robot can be wired or wireless.</li>
-                        <li> Readymade gear boxes and wheels can be used. But use of Lego kits is
-                        strictly prohibited. </li>
-                  </div>
-                     <br>
-                    <div>GAMEPLAY:
-                        Round 1:<br>
-                        <li> Two robots will be placed in the green zone.</li>
-                            <li> When the game starts, a robot will have to push out its opponent from the
-                        green zone.</li>
-                        <li> Points will be given as:<br>
-                        a. If a bot pushes out the opponent to the blue zone, +5 points will awarded.<br>
-                        b. If a bot pushes out the opponent to the yellow zone, +5 points will awarded.<br>
-                        c. If a bot pushes out the opponent to the red zone, +5 points will awarded.<br></li>
-                        <li> After a ROBOT pushes out its opponent to the red zone they will be recalled
-                        back to the centre.</li>
-                        <li> Make some damage to your opponent to get extra points or make it unable
-                        to move using your weapon to win the round instantly.</li>
-                        Round 2:
-                            <li> Two bots will be placed in S1 and S2 zone.</li>
-                                <li> A cube will be placed inside each zone and bots have to bring their cube to
-                        their respective holes.</li>
-                        <li> Bots will be permitted for the next/final round according to their scores
-                        from this round only.</li>
-                        Round 3:
-                        The gameplay of the round 3 will be revealed on the day of the competition.
-                        (Note: No special modification of the bots will be required for this round.)
-                  </div><br><br>
-                  <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1">Name</span>
+              <div class="modal-body">
+                  <div>ROBOT SPECIFICATION-
+                      <li> The max dimension of the robot can be 30cm x 30cm (l x b). Height is
+                          as per your convenience. </li>
+                        <li>Each robot should not weight more than 3.5kg.</li>
+                        <li>The maximum voltage across any two terminals should not be more than
+                            12volts.</li>
+                        <li>The robot may be wired or wireless.</li>
+                        <li>Readymade gearboxes and wheels can be used. Use of Lego kits for any
+                          purpose is not allowed.</li>
+                            <li>All connections should be made safe to prevent short circuits and battery
+                              fires. Any unsafe circuitry may be asked to replace, failure to do so may lead to
+                              disqualification.</li>
                     </div>
-                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                  </div><br>
-                  <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1">Email</span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="your email" aria-label="Username" aria-describedby="basic-addon1">
-                  </div><br>
-                  <div class="input-group mb-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">Registration Fee</span>
-                      </div>
-                      <input type="text" class="form-control" placeholder="100Rs" aria-label="Username" aria-describedby="basic-addon1" readonly>
-                  </div><br>
-                  
+                       <br>
+                    <div>Rules-
+                      <li> Each team has to make their robots under the specifications given above.</li>
+                      <li>Each team can be consists of maximum 4 members. Students from different
+                          institutes can form a team. </li>
+                      <li>The necessary rules for playing the match will be explained on the day of
+                          event.</li>
+                      <li> Skipping of the obstacles etc. will lead to penalty.
+                          The decisions of the event judges will be the final and binding, failing to comply
+                          will lead to disqualification. </li>
+                    </div><br><br>
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+        </div>
+    </div>
+</div>
+
+<!-- regsistrations -->
+<div class="modal fade" id="exampleModalScrollableSurvivor" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalScrollableTitle">Robo Soccer Registration</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" data-dismiss="modal">Register</button>
-            </div>
+            <form  action="/technicalevents/survivorbot"  method="POST" >
+                  <div class="modal-body">
+                      <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Name</span>
+                          </div>
+                          <input type="text" class="form-control" id="name" name="name" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                        </div><br>
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Email</span>
+                          </div>
+                          <input type="text" class="form-control" id="email" name="email" placeholder="your email" aria-label="Username" aria-describedby="basic-addon1">
+                        </div><br>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">Registration Fee</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="100Rs" aria-label="Username" aria-describedby="basic-addon1" readonly>
+                        </div><br>
+                </div> 
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary" >Register</button>
+                </div>           
+            </form>
+            
+            
         </div>
     </div>
   </div>
+
 
 
 <div class="modal fade" id="exampleModalScrollableDevloper" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
@@ -563,33 +558,76 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-              <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">Name</span>
-                  </div>
-                  <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                </div><br>
+          <form action="/technicalevents/addDevelopers"  method="POST" >
+              <div class="modal-body">
                 <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">Email</span>
-                  </div>
-                  <input type="text" class="form-control" placeholder="your email" aria-label="Username" aria-describedby="basic-addon1">
-                </div><br>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">Project Details</span>
-                  </div>
-                  <input type="text" class="form-control" placeholder="project details" aria-label="Username" aria-describedby="basic-addon1">
-                </div><br>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Register</button>
-          </div>
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Name</span>
+                    </div>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                  </div><br>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Email</span>
+                    </div>
+                    <input type="text" class="form-control" id="email" name="email" placeholder="your email" aria-label="Username" aria-describedby="basic-addon1">
+                  </div><br>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Project Details</span>
+                    </div>
+                    <input type="text" class="form-control" id="project" name="project" placeholder="project details" aria-label="Username" aria-describedby="basic-addon1">
+                  </div><br>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Register</button>
+              </div>
+          </form>
       </div>
   </div>
 </div>
+
+<div class="modal fade" id="exampleModalScrollableTech" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalScrollableTitle">tech exhibition</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <form action="/technicalevents/techExhibition"  method="POST" >
+                <div class="modal-body">
+                  <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Name</span>
+                      </div>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                    </div><br>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Email</span>
+                      </div>
+                      <input type="text" class="form-control" id="email" name="email" placeholder="your email" aria-label="Username" aria-describedby="basic-addon1">
+                    </div><br>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Project Details</span>
+                      </div>
+                      <input type="text" class="form-control" id="project" name="project" placeholder="project details" aria-label="Username" aria-describedby="basic-addon1">
+                    </div><br>
+                </div>
+  
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+  </div>
 
 
 <!-- regsistrations -->
@@ -602,46 +640,66 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
-              <div>
-                  ELIGIBILITY:
-                  <li> All students with a valid identity card of their respective educational</li>
-                  institute are eligible to participate in the competition.
-                  <li> Both on spot entry and online pre-registration are available.</li>
-              </div>
-              <div>
-                  RULES:
-                  <li> The decision made by the committee will be final.</li>
-                  <li>Any tampering to the cube will lead to disqualification.</li>
-                  <li> Modification to the cube is not permitted.</li><br>
-              </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1">Name</span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                  </div><br>
-                  <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1">Email</span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="your email" aria-label="Username" aria-describedby="basic-addon1">
-                  </div><br>
+            <form action="/technicalevents/cubicon"  method="POST" >
+              <div class="modal-body">
                   <div class="input-group mb-3">
                       <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">Registration Fee</span>
+                        <span class="input-group-text" id="basic-addon1">Name</span>
                       </div>
-                      <input type="text" class="form-control" placeholder="100Rs" aria-label="Username" aria-describedby="basic-addon1" readonly>
-                  </div><br>
-            </div>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                    </div><br>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Email</span>
+                      </div>
+                      <input type="text" class="form-control" id="email" name="email" placeholder="your email" aria-label="Username" aria-describedby="basic-addon1">
+                    </div><br>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">Registration Fee</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="100Rs" aria-label="Username" aria-describedby="basic-addon1" readonly>
+                    </div><br>
+            </div> 
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" data-dismiss="modal">Register</button>
-            </div>
+              <button type="submit" class="btn btn-primary" >Register</button>
+            </div>           
+        </form>
         </div>
     </div>
   </div>
 
+
+  <div class="modal fade" id="exampleModalScrollableRubicRules" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalScrollableTitle">Rubic Cube</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+                  <div class="modal-body">
+                      <div>
+                          ELIGIBILITY:
+                          <li> All students with a valid identity card of their respective educational</li>
+                          institute are eligible to participate in the competition.
+                          <li> Both on spot entry and online pre-registration are available.</li>
+                      </div>
+                      <div>
+                          RULES:
+                          <li> The decision made by the committee will be final.</li>
+                          <li>Any tampering to the cube will lead to disqualification.</li>
+                          <li> Modification to the cube is not permitted.</li><br>
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+          </div>
+      </div>
+    </div>
   <!-- regsistrations -->
 <!-- footer start  -->
 <%- include('./include/footer.ejs') %>
