@@ -124,7 +124,19 @@ app.get("/cultural", CulturelEventsControllers.index);
 app.get("/exhibitions", ExhibitionControllers.index);
 app.get("/funology", FunologyControllers.index);
 app.get("/management", ManagementControllers.index);
+
+
 app.get("/schoolNmodule", SchoolModuleControllers.index);
+app.post("/schoolNmodule/warwords", SchoolModuleControllers.warWordsPostSubmit);
+app.post("/schoolNmodule/vibgyor", SchoolModuleControllers.vibgyorPostSubmit);
+app.post("/schoolNmodule/blink", SchoolModuleControllers.blinkPostSubmit);
+app.post("/schoolNmodule/openMic", SchoolModuleControllers.openMicPostSubmit);
+app.post("/schoolNmodule/trivial", SchoolModuleControllers.triavialwarWordsPostSubmit);
+app.post("/schoolNmodule/cine", SchoolModuleControllers.cineVisionPostSubmit);
+
+
+
+
 app.get("/socialinitiatives", SocialControllers.index);
 app.get("/sports", SportsControllers.index);
 
