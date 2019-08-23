@@ -10,11 +10,13 @@ export const index = (req: Request, res: Response) => {
 export const warWordsPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
+    const phoneNum = req.body.cn;
     console.log(req);
     defaultApp.firestore().collection("warWords")
         .add({
             name,
-            email
+            email,
+            phoneNum
         }).then(value => {
             res.redirect("/");
         }).catch(error => {
@@ -25,11 +27,14 @@ export const warWordsPostSubmit = (req: Request, res: Response) => {
 export const vibgyorPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
+    const phoneNum = req.body.cn;
+
     console.log(req);
     defaultApp.firestore().collection("vibgyor")
         .add({
             name,
-            email
+            email,
+            phoneNum
         }).then(value => {
             res.redirect("/");
         }).catch(error => {
@@ -40,11 +45,14 @@ export const vibgyorPostSubmit = (req: Request, res: Response) => {
 export const cineVisionPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
+    const phoneNum = req.body.cn;
+
     console.log(req);
     defaultApp.firestore().collection("cineVision")
         .add({
             name,
-            email
+            email,
+            phoneNum
         }).then(value => {
             res.redirect("/");
         }).catch(error => {
@@ -55,11 +63,14 @@ export const cineVisionPostSubmit = (req: Request, res: Response) => {
 export const blinkPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
+    const phoneNum = req.body.cn;
+
     console.log(req);
     defaultApp.firestore().collection("blink")
         .add({
             name,
-            email
+            email,
+            phoneNum
         }).then(value => {
             res.redirect("/");
         }).catch(error => {
@@ -69,11 +80,14 @@ export const blinkPostSubmit = (req: Request, res: Response) => {
 export const openMicPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
+    const phoneNum = req.body.cn;
+
     console.log(req);
     defaultApp.firestore().collection("openMic")
         .add({
             name,
-            email
+            email,
+            phoneNum
         }).then(value => {
             res.redirect("/");
         }).catch(error => {
@@ -84,11 +98,14 @@ export const openMicPostSubmit = (req: Request, res: Response) => {
 export const triavialwarWordsPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
+    const phoneNum = req.body.cn;
+
     console.log(req);
     defaultApp.firestore().collection("trivialParadox")
         .add({
             name,
-            email
+            email,
+            phoneNum
         }).then(value => {
             res.redirect("/");
         }).catch(error => {
