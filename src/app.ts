@@ -15,6 +15,9 @@ import { MONGODB_URI, SESSION_SECRET } from "./util/secrets";
 import * as firebaseadmin from "firebase-admin";
 import serviceAccount from "./aux.json";
 
+
+// import sgMail from "@sendgrid/mail";
+
 const MongoStore = mongo(session);
 
 // Controllers (route handlers)
@@ -50,7 +53,23 @@ import * as successControllers from "./controllers/Success";
 export const defaultApp = firebaseadmin.initializeApp({
     credential: firebaseadmin.credential.cert(serviceAccount as any),
     databaseURL: "https://auxesis-v9.firebaseio.com"
-  });
+});
+
+
+// send grid mail config
+// export const SENDGRID_API_KEY = "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";
+
+// sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+// const msg = {
+//   to: "dikhitbhuyan@gmail.com",
+//   from: "test@example.com",
+//   subject: "AuxesisV9.0",
+//   text: "welcome to auxesis V9.0",
+//   html: "<strong>and easy to do anywhere, even with Node.js</strong>",
+// };
+// sgMail.send(msg);
+
+
 
 
 // API keys and Passport configuration
