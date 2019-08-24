@@ -1,5 +1,9 @@
-import { defaultApp } from "../app";
+// @ts-ignore
+import { defaultApp, MAIN_HTML } from "../app";
 import { Request, Response } from "express";
+import sgMail from "@sendgrid/mail";
+
+export const SENDGRID_API_KEY = "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";
 
 export const index = (req: Request, res: Response) => {
     res.render("technicalEvents", {
@@ -10,23 +14,32 @@ export const index = (req: Request, res: Response) => {
 export const postSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
-    console.log(req);
+    const trans = req.body.trans;
     defaultApp.firestore().collection("aveza")
         .add({
             name,
-            email
-        }).then(value => {
-            res.redirect("/success");
-        }).catch(error => {
-            res.render("/error");
-        });
+            email,
+            trans
+        }).then(async (value) => {
+        await sgMail.setApiKey(SENDGRID_API_KEY);
+        const msg = {
+            to: email,
+            from: "registration@atmiyo.technology",
+            subject: "Registration Successful",
+            html: MAIN_HTML,
+        };
+        await sgMail.send(msg);
+        res.redirect("/success");
+    }).catch(error => {
+        console.log(error);
+        res.render("error");
+    });
 };
 
 export const devPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
     const project = req.body.project;
-    console.log(req);
     defaultApp.firestore().collection("developerConference")
         .add({
             name,
@@ -35,7 +48,8 @@ export const devPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            console.log(error);
+            res.render("error");
         });
 };
 
@@ -50,7 +64,7 @@ export const roboAssultPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };
 
@@ -65,7 +79,7 @@ export const roboSoccerPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };
 
@@ -80,7 +94,7 @@ export const SurvivorBotPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };
 
@@ -96,7 +110,7 @@ export const cubiconPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };
 
@@ -113,6 +127,6 @@ export const techExPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };

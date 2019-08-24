@@ -20,7 +20,7 @@ export const warWordsPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };
 
@@ -38,7 +38,7 @@ export const vibgyorPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };
 
@@ -56,7 +56,7 @@ export const cineVisionPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };
 
@@ -74,7 +74,7 @@ export const blinkPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };
 export const openMicPostSubmit = (req: Request, res: Response) => {
@@ -91,7 +91,7 @@ export const openMicPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };
 
@@ -109,6 +109,6 @@ export const triavialwarWordsPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };

@@ -20,7 +20,7 @@ export const candidPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.redirect("/error");
+            res.redirect("error");
         });
 };
 
@@ -54,7 +54,7 @@ export const doodlingPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };
 
@@ -71,7 +71,7 @@ export const megaPixelPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };
 
@@ -88,7 +88,7 @@ export const grafityPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };
 
@@ -105,7 +105,7 @@ export const treasureHuntPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };
 

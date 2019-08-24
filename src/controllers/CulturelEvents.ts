@@ -20,7 +20,7 @@ export const ranshakPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };
 
@@ -37,7 +37,7 @@ export const kallasteiaPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };
 
@@ -55,7 +55,7 @@ export const culturalExchangePostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };
 
@@ -72,7 +72,7 @@ export const xobdePostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };
 
@@ -89,7 +89,7 @@ export const goStreetzPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };
 
@@ -106,7 +106,7 @@ export const euphonicsPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };
 
@@ -124,7 +124,7 @@ export const chromaticWaltzPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };
 
@@ -143,6 +143,6 @@ export const rootsPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };

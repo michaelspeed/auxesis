@@ -18,7 +18,7 @@ export const IOSPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };
 
@@ -33,7 +33,7 @@ export const roboticsPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };
 
@@ -48,6 +48,6 @@ export const icEnginePostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("/error");
+            res.render("error");
         });
 };
