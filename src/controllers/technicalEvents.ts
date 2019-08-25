@@ -44,7 +44,7 @@ export const devPostSubmit = (req: Request, res: Response) => {
         .add({
             name,
             email,
-            project;
+            project,
         }).then(async (value) => {
             await sgMail.setApiKey(SENDGRID_API_KEY);
             const msg = {

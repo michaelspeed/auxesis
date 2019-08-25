@@ -1,4 +1,4 @@
-import  sgMail  from '@sendgrid/mail';
+import  sgMail  from "@sendgrid/mail";
 import { defaultApp, MAIN_HTML } from "../app";
 import { Request, Response } from "express";
 import { SENDGRID_API_KEY } from "./workshop";
@@ -8,7 +8,6 @@ export const index = (req: Request, res: Response) => {
         title: "CulturalEvents"
     });
 };
-
 export const ranshakPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
@@ -34,8 +33,6 @@ export const ranshakPostSubmit = (req: Request, res: Response) => {
             res.render("error");
         });
 };
-    
-
 export const kallasteiaPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
@@ -61,8 +58,6 @@ export const kallasteiaPostSubmit = (req: Request, res: Response) => {
             res.render("error");
         });
     };
-    
-
 export const culturalExchangePostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
@@ -88,8 +83,6 @@ export const culturalExchangePostSubmit = (req: Request, res: Response) => {
             res.render("error");
         });
     };
-    
-
 export const xobdePostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
@@ -115,7 +108,6 @@ export const xobdePostSubmit = (req: Request, res: Response) => {
             res.render("error");
         });
     };
-    
 export const goStreetzPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
@@ -141,8 +133,6 @@ export const goStreetzPostSubmit = (req: Request, res: Response) => {
             res.render("error");
         });
     };
-    
-
 export const euphonicsPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
@@ -168,8 +158,6 @@ export const euphonicsPostSubmit = (req: Request, res: Response) => {
             res.render("error");
         });
     };
-    
-
 export const chromaticWaltzPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
@@ -196,8 +184,6 @@ export const chromaticWaltzPostSubmit = (req: Request, res: Response) => {
             res.render("error");
         });
     };
-    
-
 export const rootsPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
@@ -223,5 +209,4 @@ export const rootsPostSubmit = (req: Request, res: Response) => {
             console.log(error);
             res.render("error");
         });
-    };
-    
+};

@@ -55,7 +55,6 @@ export const IOSPostSubmit = (req: Request, res: Response) => {
             res.render("error");
         });
 };
-    
 export const icEnginePostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
@@ -79,4 +78,3 @@ export const icEnginePostSubmit = (req: Request, res: Response) => {
             res.render("error");
         });
 };
-    

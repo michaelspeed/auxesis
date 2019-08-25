@@ -37,10 +37,8 @@ import * as blogController from "./controllers/blog";
 import * as creativityEventsControllers from "./controllers/CreativityEvents";
 import * as CulturelEventsControllers from "./controllers/CulturelEvents";
 import * as ExhibitionControllers from "./controllers/Exhibitions";
-import * as FunologyControllers from "./controllers/FunologyEvents";
 import * as ManagementControllers from "./controllers/ManagementModule";
 import * as SchoolModuleControllers from "./controllers/SchoolModule";
-import * as SocialControllers from "./controllers/SocialInitiaves";
 import * as SportsControllers from "./controllers/Sports";
 import * as TechnicalControllers from "./controllers/technicalEvents";
 import * as webDevelopersControllers from "./controllers/webDevelopers";
@@ -487,7 +485,6 @@ app.post("/cultural/euphonics", CulturelEventsControllers.euphonicsPostSubmit);
 
 
 app.get("/exhibitions", ExhibitionControllers.index);
-app.get("/funology", FunologyControllers.index);
 app.get("/management", ManagementControllers.index);
 
 
@@ -500,9 +497,6 @@ app.post("/schoolNmodule/trivial", SchoolModuleControllers.triavialwarWordsPostS
 app.post("/schoolNmodule/cine", SchoolModuleControllers.cineVisionPostSubmit);
 
 
-
-
-app.get("/socialinitiatives", SocialControllers.index);
 
 app.get("/sports", SportsControllers.index);
 app.post("/sports/hatrick", SportsControllers.hatrickPostSubmit);
