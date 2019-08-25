@@ -438,6 +438,8 @@ app.use(
  * Primary app routes.
  */
 app.get("/", homeController.index);
+app.post("/sponsor", homeController.sponsorPostSubmit);
+
 app.get("/events", eventController.index);
 
 app.get("/error", ErrorControllers.index);
