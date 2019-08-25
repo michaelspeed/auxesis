@@ -154,15 +154,16 @@
           <!-- end content-box --> 
         </div>
         <!-- end project-box -->
-        <div class="project-box wow fadeIn" data-bg="#ebf8f3">
+        
+        <div class="project-box wow fadeIn" data-bg="#ece6f4">
           <figure>
-            <a href="images/roboSoccer.jpg" data-fancybox>
-            <img src="images/roboSoccer.jpg" alt="Image">
-           </a>
+            <a href="images/techexhibition.jpg" data-fancybox>
+            <img src="images/techexhibition.jpg" alt="Image">
+            </a>
           </figure>
           <div class="content-box">
-            <div class="inner"> 
-              <h3><span>Cine</span>Vision</h3>
+            <div class="inner">
+              <h3><span>Science</span>Exhibition</h3>
               <div class="custom-link wow fadeIn">
                     <a href="#" data-toggle="modal" data-target="#exampleModalScrollableCine">
                         <div class="lines"> <span></span> <span></span> </div>
@@ -177,6 +178,7 @@
           <!-- end content-box --> 
         </div>
         <!-- end project-box --> 
+
         <div class="project-box wow fadeIn" data-bg="#f4eedf">
           <figure>
             <a href="images/botpic.jpg" data-fancybox>
@@ -245,6 +247,29 @@
             </div>
             <!-- end content-box --> 
           </div>
+          
+          <div class="project-box wow fadeIn" data-bg="#f4eedf">
+            <figure>
+              <a href="images/sell.jpg" data-fancybox>
+                <img src="images/sell.jpg" alt="Image">
+              </a>
+            </figure>
+            <div class="content-box">
+              <div class="inner">
+                <h3><span>Can You</span>Sell It?</h3>
+                <div class="custom-link wow fadeIn">
+                      <a href="#" data-toggle="modal" data-target="#exampleModalScrollableCan">
+                          <div class="lines"> <span></span> <span></span> </div>
+                          <!-- end lines -->
+                          <b>Register Here</b>
+                      </a>
+                  </div>
+                <!-- end custom-link --> 
+              </div>
+              <!-- end inner --> 
+            </div>
+            <!-- end content-box --> 
+          </div>
 
       </div>
     </div>
@@ -267,32 +292,43 @@
                       <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Name</span>
                       </div>
-                      <input type="text" class="form-control" id="name" name="name" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                    </div><br>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Name" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+
                     <div class="input-group mb-3">
                       <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Email</span>
                       </div>
-                      <input type="text" class="form-control" id="email" name="email" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                    </div><br>
-                    <div class="input-group mb-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">Topic</span>
-                      </div>
-                      <input type="text" class="form-control" placeholder="War Words" aria-label="Username" aria-describedby="basic-addon1" readonly>
-                    </div><br>
+                      <input type="text" class="form-control" id="email" name="email" placeholder="Enter your Email" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                           <span class="input-group-text" id="basic-addon1">Contact Number</span>
                         </div>
-                        <input type="text" class="form-control" id="cn" name="cn" placeholder="War Words" aria-label="Username" aria-describedby="basic-addon1">
-                      </div><br>
-                    <div class="input-group mb-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">regsitration Fee</span>
+                        <input type="text" class="form-control" id="cn" name="cn" placeholder="Phone number" aria-label="Username" aria-describedby="basic-addon1">
                       </div>
-                      <input type="text" class="form-control" placeholder="100Rs" aria-label="Username" aria-describedby="basic-addon1">
-                    </div><br>
+
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">Registration Fee</span>
+                        </div>
+                        <input type="text" class="form-control" id="regfees" name="regfees" placeholder="1500Rs" aria-label="Username" aria-describedby="basic-addon1" readonly>
+                      </div>
+
+                    <div class="alert alert-success" role="alert">
+                        <h4 class="alert-heading">Payment Link: <a href="#" style="color: #0c5460">Instamojo</a></h4>
+                        <p>Please open in a new tab!</p>
+                        <hr>
+                        <p class="mb-0">paste the paymentID in the following section</p>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">PaymentID</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Payment ID" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -315,40 +351,51 @@
           </div>
           <form action="/schoolNmodule/vibgyor" method="POST">
               <div class="modal-body">
-                  <div class="input-group mb-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">Name</span>
-                      </div>
-                      <input type="text" class="form-control" id="name" name="name" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                    </div><br>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Email</span>
+                  </div>
+                  <input type="text" class="form-control" id="email" name="email" placeholder="Your Email" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+
                     <div class="input-group mb-3">
                       <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Email</span>
                       </div>
-                      <input type="text" class="form-control" id="email" name="email" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                    </div><br>
-                    <div class="input-group mb-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">Topic</span>
-                      </div>
-                      <input type="text" class="form-control" placeholder="Vibgyor" aria-label="Username" aria-describedby="basic-addon1" readonly>
-                    </div><br>
+                      <input type="text" class="form-control" id="email" name="email" placeholder="Your Email" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                           <span class="input-group-text" id="basic-addon1">Contact Number</span>
                         </div>
-                        <input type="text" class="form-control" id="cn" name="cn" placeholder="War Words" aria-label="Username" aria-describedby="basic-addon1">
-                      </div><br>
-                    <div class="input-group mb-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">regsitration Fee</span>
+                        <input type="text" class="form-control" id="cn" name="cn" placeholder="Contact Number" aria-label="Username" aria-describedby="basic-addon1">
                       </div>
-                      <input type="text" class="form-control" placeholder="100Rs" aria-label="Username" aria-describedby="basic-addon1">
-                    </div><br>
+
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">Registration Fee</span>
+                        </div>
+                        <input type="text" class="form-control" id="regfees" name="regfees" placeholder="1500Rs" aria-label="Username" aria-describedby="basic-addon1" readonly>
+                      </div>
+
+                    <div class="alert alert-success" role="alert">
+                        <h4 class="alert-heading">Payment Link: <a href="https://imjo.in/2anX3Q" style="color: #0c5460">Instamojo</a></h4>
+                        <p>Please open in a new tab!</p>
+                        <hr>
+                        <p class="mb-0">paste the paymentID in the following section</p>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">PaymentID</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Payment ID" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary">Register</button>
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-outline-primary">Register</button>
               </div>
           </form>
       </div>
@@ -359,7 +406,7 @@
   <div class="modal-dialog modal-dialog-scrollable" role="document">
       <div class="modal-content">
           <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalScrollableTitle">Cine Vision Registration</h5>
+          <h5 class="modal-title" id="exampleModalScrollableTitle">Science Exhibition Registration</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -371,35 +418,46 @@
                       <span class="input-group-text" id="basic-addon1">Name</span>
                     </div>
                     <input type="text" class="form-control" id="name" name="name" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                  </div><br>
+                  </div>
+
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1">Email</span>
                     </div>
                     <input type="text" class="form-control" id="email" name="email" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                  </div><br>
-                  <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1">Topic</span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Cine Vision" aria-label="Username" aria-describedby="basic-addon1" readonly>
-                  </div><br>
+                  </div>
+                  
                   <div class="input-group mb-3">
                       <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Contact Number</span>
                       </div>
                       <input type="text" class="form-control" id="cn" name="cn" placeholder="War Words" aria-label="Username" aria-describedby="basic-addon1">
-                    </div><br>
-                  <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1">regsitration Fee</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="100Rs" aria-label="Username" aria-describedby="basic-addon1">
-                  </div><br>
+
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Registration Fee</span>
+                      </div>
+                      <input type="text" class="form-control" id="regfees" name="regfees" placeholder="1500Rs" aria-label="Username" aria-describedby="basic-addon1" readonly>
+                    </div>
+
+                  <div class="alert alert-success" role="alert">
+                      <h4 class="alert-heading">Payment Link: <a href="https://imjo.in/2anX3Q" style="color: #0c5460">Instamojo</a></h4>
+                      <p>Please open in a new tab!</p>
+                      <hr>
+                      <p class="mb-0">paste the paymentID in the following section</p>
+                  </div>
+
+                  <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">PaymentID</span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Payment ID" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-primary" >Register</button>
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-outline-primary" >Register</button>
             </div>
           </form>
       </div>
@@ -422,31 +480,42 @@
                         <span class="input-group-text" id="basic-addon1">Name</span>
                       </div>
                       <input type="text" class="form-control" id="name" name="name" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                    </div><br>
+                    </div>
+
                     <div class="input-group mb-3">
                       <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Email</span>
                       </div>
                       <input type="text" class="form-control" id="email" name="email" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                    </div><br>
-                    <div class="input-group mb-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">Topic</span>
-                      </div>
-                      <input type="text" class="form-control" placeholder="Blink" aria-label="Username" aria-describedby="basic-addon1" readonly>
-                    </div><br>
+                    </div>
+                    
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                           <span class="input-group-text" id="basic-addon1">Contact Number</span>
                         </div>
                         <input type="text" class="form-control" id="cn" name="cn" placeholder="War Words" aria-label="Username" aria-describedby="basic-addon1">
-                      </div><br>
-                    <div class="input-group mb-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">regsitration Fee</span>
                       </div>
-                      <input type="text" class="form-control" placeholder="100Rs" aria-label="Username" aria-describedby="basic-addon1">
-                    </div><br>
+
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">Registration Fee</span>
+                        </div>
+                        <input type="text" class="form-control" id="regfees" name="regfees" placeholder="1500Rs" aria-label="Username" aria-describedby="basic-addon1" readonly>
+                      </div>
+
+                    <div class="alert alert-success" role="alert">
+                        <h4 class="alert-heading">Payment Link: <a href="https://imjo.in/2anX3Q" style="color: #0c5460">Instamojo</a></h4>
+                        <p>Please open in a new tab!</p>
+                        <hr>
+                        <p class="mb-0">paste the paymentID in the following section</p>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">PaymentID</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Payment ID" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -473,35 +542,47 @@
                       <span class="input-group-text" id="basic-addon1">Name</span>
                     </div>
                     <input type="text" class="form-control" name="name" id="name" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                  </div><br>
+                  </div>
+
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1">Email</span>
                     </div>
                     <input type="text" class="form-control" id="email" name="email" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                  </div><br>
-                  <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1">Topic</span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Lagom:Open Mic" aria-label="Username" aria-describedby="basic-addon1" readonly>
-                  </div><br>
+                  </div>
+
                   <div class="input-group mb-3">
                       <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Contact Number</span>
                       </div>
                       <input type="text" class="form-control" id="cn" name="cn" placeholder="War Words" aria-label="Username" aria-describedby="basic-addon1">
-                    </div><br>
-                  <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1">regsitration Fee</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="100Rs" aria-label="Username" aria-describedby="basic-addon1">
-                  </div><br>
+
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Registration Fee</span>
+                      </div>
+                      <input type="text" class="form-control" id="regfees" name="regfees" placeholder="1500Rs" aria-label="Username" aria-describedby="basic-addon1" readonly>
+                    </div>
+
+                  <div class="alert alert-success" role="alert">
+                      <h4 class="alert-heading">Payment Link: <a href="#" style="color: #0c5460">Instamojo</a></h4>
+                      <p>Please open in a new tab!</p>
+                      <hr>
+                      <p class="mb-0">paste the paymentID in the following section</p>
+                  </div>
+
+                  <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">PaymentID</span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Payment ID" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="submit" class="btn btn-primary" >Register</button>
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-outline-primary" >Register</button>
             </div>
           </form>
       </div>
@@ -524,36 +605,99 @@
                         <span class="input-group-text" id="basic-addon1">Name</span>
                       </div>
                       <input type="text" class="form-control" id="name" name="name" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                    </div><br>
+                    </div>
                     <div class="input-group mb-3">
                       <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Email</span>
                       </div>
                       <input type="text" class="form-control" id="name" name="email" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                    </div><br>
+                    </div>
                     <div class="input-group mb-3">
                       <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">Topic</span>
+                        <span class="input-group-text" id="basic-addon1">Registration Fee</span>
                       </div>
-                      <input type="text" class="form-control" placeholder="Trivial Paradox" aria-label="Username" aria-describedby="basic-addon1" readonly>
-                    </div><br>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="basic-addon1">Contact Number</span>
-                        </div>
-                        <input type="text" class="form-control" id="cn" name="cn" placeholder="War Words" aria-label="Username" aria-describedby="basic-addon1">
-                      </div><br>
-                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" id="regfees" name="regfees" placeholder="1500Rs" aria-label="Username" aria-describedby="basic-addon1" readonly>
+                    </div>
+                  <div class="alert alert-success" role="alert">
+                      <h4 class="alert-heading">Payment Link: <a href="https://imjo.in/2anX3Q" style="color: #0c5460">Instamojo</a></h4>
+                      <p>Please open in a new tab!</p>
+                      <hr>
+                      <p class="mb-0">paste the paymentID in the following section</p>
+                  </div>
+                  <div class="input-group mb-3">
                       <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">regsitration Fee</span>
+                          <span class="input-group-text" id="basic-addon1">PaymentID</span>
                       </div>
-                      <input type="text" class="form-control" placeholder="100Rs" aria-label="Username" aria-describedby="basic-addon1">
-                    </div><br>
+                      <input type="text" class="form-control" placeholder="Payment ID" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button type="submit" class="btn btn-primary" >Register</button>
               </div>
+          </form>
+      </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="exampleModalScrollableCan" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalScrollableTitle">Science Exhibition Registration</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form action="/schoolNmodule/cine" method="POST">
+            <div class="modal-body">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Name</span>
+                    </div>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Email</span>
+                    </div>
+                    <input type="text" class="form-control" id="email" name="email" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  
+                  <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Contact Number</span>
+                      </div>
+                      <input type="text" class="form-control" id="cn" name="cn" placeholder="War Words" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Registration Fee</span>
+                      </div>
+                      <input type="text" class="form-control" id="regfees" name="regfees" placeholder="1500Rs" aria-label="Username" aria-describedby="basic-addon1" readonly>
+                    </div>
+
+                  <div class="alert alert-success" role="alert">
+                      <h4 class="alert-heading">Payment Link: <a href="#" style="color: #0c5460">Instamojo</a></h4>
+                      <p>Please open in a new tab!</p>
+                      <hr>
+                      <p class="mb-0">paste the paymentID in the following section</p>
+                  </div>
+
+                  <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">PaymentID</span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Payment ID" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-outline-primary" >Register</button>
+            </div>
           </form>
       </div>
   </div>
