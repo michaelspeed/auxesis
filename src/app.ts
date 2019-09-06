@@ -23,7 +23,6 @@ const MongoStore = mongo(session);
 // Controllers (route handlers)
 import * as homeController from "./controllers/home";
 import * as userController from "./controllers/user";
-import * as apiController from "./controllers/api";
 import * as contactController from "./controllers/contact";
 import * as eventController from "./controllers/events";
 import * as speakerController from "./controllers/speaker";
@@ -377,13 +376,7 @@ export const MAIN_HTML = "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transiti
 //   text: "welcome to auxesis V9.0",
 //   html: "<strong>and easy to do anywhere, even with Node.js</strong>",
 // };
-// sgMail.send(msg);
-
-
-
-
-// API keys and Passport configuration
-import * as passportConfig from "./config/passport";
+// sgMail.send(msg)
 
 // Create Express server
 const app = express();
@@ -541,15 +534,10 @@ app.get("/account/unlink/:provider", passportConfig.isAuthenticated, userControl
 /**
  * API examples routes.
  */
-app.get("/api", apiController.getApi);
-app.get("/api/facebook", passportConfig.isAuthenticated, passportConfig.isAuthorized, apiController.getFacebook);
+
 
 /**
  * OAuth authentication routes. (Sign in)
  */
-app.get("/auth/facebook", passport.authenticate("facebook", { scope: ["email", "public_profile"] }));
-app.get("/auth/facebook/callback", passport.authenticate("facebook", { failureRedirect: "/login" }), (req, res) => {
-  res.redirect(req.session.returnTo || "/");
-});
 
 export default app;
