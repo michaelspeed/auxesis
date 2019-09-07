@@ -456,12 +456,9 @@ app.post("/workshop/ICEngine", workshopController.icEnginePostSubmit);
 app.get("/blog", blogController.index);
 
 app.get("/creativity", creativityEventsControllers.index);
-app.post("/creativity/candid", creativityEventsControllers.candidPostSubmit);
-app.post("/creativity/waste", creativityEventsControllers.wastePostSubmit);
+app.post("/creativity/canvas", creativityEventsControllers.canvasPostSubmit);
 app.post("/creativity/doodling", creativityEventsControllers.doodlingPostSubmit);
-app.post("/creativity/mega", creativityEventsControllers.megaPixelPostSubmit);
-app.post("/creativity/grafity", creativityEventsControllers.grafityPostSubmit);
-app.post("/creativity/treasure", creativityEventsControllers.treasureHuntPostSubmit);
+app.post("/creativity/artexpo", creativityEventsControllers.artExpoPostSubmit);
 
 
 app.get("/cultural", CulturelEventsControllers.index);

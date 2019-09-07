@@ -7,12 +7,12 @@ export const index = (req: Request, res: Response) => {
     });
 };
 
-export const candidPostSubmit = (req: Request, res: Response) => {
+export const canvasPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
     const phoneNum = req.body.cn;
     console.log(req);
-    defaultApp.firestore().collection("candidPhotography")
+    defaultApp.firestore().collection("canvas")
         .add({
             name,
             email,
@@ -21,23 +21,6 @@ export const candidPostSubmit = (req: Request, res: Response) => {
             res.redirect("/success");
         }).catch(error => {
             res.redirect("error");
-        });
-};
-
-export const wastePostSubmit = (req: Request, res: Response) => {
-    const name = req.body.name;
-    const email = req.body.email;
-    const phoneNum = req.body.cn;
-    console.log(req);
-    defaultApp.firestore().collection("wasteToWealth")
-        .add({
-            name,
-            email,
-            phoneNum
-        }).then(value => {
-            res.redirect("/");
-        }).catch(error => {
-            res.render("error", {error: error});
         });
 };
 
@@ -58,12 +41,12 @@ export const doodlingPostSubmit = (req: Request, res: Response) => {
         });
 };
 
-export const megaPixelPostSubmit = (req: Request, res: Response) => {
+export const artExpoPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
     const phoneNum = req.body.cn;
     console.log(req);
-    defaultApp.firestore().collection("megaPixel")
+    defaultApp.firestore().collection("artExpo")
         .add({
             name,
             email,
@@ -75,39 +58,6 @@ export const megaPixelPostSubmit = (req: Request, res: Response) => {
         });
 };
 
-export const grafityPostSubmit = (req: Request, res: Response) => {
-    const name = req.body.name;
-    const email = req.body.email;
-    const phoneNum = req.body.cn;
-    console.log(req);
-    defaultApp.firestore().collection("grafity")
-        .add({
-            name,
-            email,
-            phoneNum
-        }).then(value => {
-            res.redirect("/success");
-        }).catch(error => {
-            res.render("error");
-        });
-};
-
-export const treasureHuntPostSubmit = (req: Request, res: Response) => {
-    const name = req.body.name;
-    const email = req.body.email;
-    const phoneNum = req.body.cn;
-    console.log(req);
-    defaultApp.firestore().collection("tresureHunt")
-        .add({
-            name,
-            email,
-            phoneNum
-        }).then(value => {
-            res.redirect("/success");
-        }).catch(error => {
-            res.render("error");
-        });
-};
 
 
 
