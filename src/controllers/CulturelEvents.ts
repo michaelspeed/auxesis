@@ -210,3 +210,31 @@ export const rootsPostSubmit = (req: Request, res: Response) => {
             res.render("error");
         });
 };
+
+
+export const tseriesPostSubmit = (req: Request, res: Response) => {
+    const name = req.body.name;
+    const email = req.body.email;
+    const phoneNum = req.body.cn;
+
+    console.log(req);
+    defaultApp.firestore().collection("T-Series")
+        .add({
+            name,
+            email,
+            phoneNum
+        }).then(async (value) => {
+            await sgMail.setApiKey(SENDGRID_API_KEY);
+            const msg = {
+                to: email,
+                from: "registration@atmiyo.technology",
+                subject: "Registration Successful",
+                html: MAIN_HTML,
+            };
+            await sgMail.send(msg);
+            res.redirect("/success");
+        }).catch(error => {
+            console.log(error);
+            res.render("error");
+        });
+};

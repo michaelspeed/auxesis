@@ -470,6 +470,8 @@ app.post("/cultural/goStreets", CulturelEventsControllers.goStreetzPostSubmit);
 app.post("/cultural/chromaticWaltz", CulturelEventsControllers.chromaticWaltzPostSubmit);
 app.post("/cultural/Roots", CulturelEventsControllers.rootsPostSubmit);
 app.post("/cultural/euphonics", CulturelEventsControllers.euphonicsPostSubmit);
+app.post("/cultural/TSeries", CulturelEventsControllers.tseriesPostSubmit);
+
 
 
 
