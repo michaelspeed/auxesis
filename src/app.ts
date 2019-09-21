@@ -449,7 +449,7 @@ app.get("/team", teamController.index);
 
 app.get("/workshop", workshopController.index);
 app.post("/workshop/IOS", workshopController.IOSPostSubmit);
-app.post("/workshop/Robotics", workshopController.roboticsPostSubmit);
+app.post("/workshop/matlab", workshopController.matlabPostSubmit);
 app.post("/workshop/ICEngine", workshopController.icEnginePostSubmit);
 
 

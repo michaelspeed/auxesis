@@ -32,11 +32,11 @@ export const IOSPostSubmit = (req: Request, res: Response) => {
             res.render("error");
         });
 };
-    export const roboticsPostSubmit = (req: Request, res: Response) => {
+    export const matlabPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
     console.log(req);
-    defaultApp.firestore().collection("robotics")
+    defaultApp.firestore().collection("matlab")
         .add({
             name,
             email,
@@ -78,3 +78,4 @@ export const icEnginePostSubmit = (req: Request, res: Response) => {
             res.render("error");
         });
 };
+
