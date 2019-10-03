@@ -13,7 +13,7 @@ import bluebird from "bluebird";
 import { MONGODB_URI, SESSION_SECRET } from "./util/secrets";
 
 import * as firebaseadmin from "firebase-admin";
-import serviceAccount from "./aux.json";
+import serviceAccount from "./fire.json";
 
 
 // import sgMail from "@sendgrid/mail";
