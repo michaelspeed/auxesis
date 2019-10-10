@@ -63,12 +63,14 @@ export const icEnginePostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
     const phone = req.body.phone;
+    const slot = req.body.first
     console.log(req);
     defaultApp.firestore().collection("icEngine")
         .add({
             name,
             email,
-            phone
+            phone,
+            slot
         }).then(async (value) => {
             await sgMail.setApiKey(SENDGRID_API_KEY);
             const msg = {
