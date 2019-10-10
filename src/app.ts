@@ -490,6 +490,7 @@ app.post("/schoolNmodule/cine", SchoolModuleControllers.cineVisionPostSubmit);
 
 
 
+
 app.get("/sports", SportsControllers.index);
 app.post("/sports/hatrick", SportsControllers.hatrickPostSubmit);
 app.post("/sports/thirdPocket", SportsControllers.thirdPocketPostSubmit);

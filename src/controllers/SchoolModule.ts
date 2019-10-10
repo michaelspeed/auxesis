@@ -112,3 +112,21 @@ export const triavialwarWordsPostSubmit = (req: Request, res: Response) => {
             res.render("error");
         });
 };
+
+export const scienceExhibition = (req: Request, res: Response) => {
+    const name = req.body.name;
+    const email = req.body.email;
+    const phoneNum = req.body.cn;
+
+    console.log(req);
+    defaultApp.firestore().collection("scienceExbihition")
+        .add({
+            name,
+            email,
+            phoneNum
+        }).then(value => {
+            res.redirect("/success");
+        }).catch(error => {
+            res.render("error");
+        });
+};

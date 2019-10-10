@@ -29,7 +29,7 @@ export const IOSPostSubmit = (req: Request, res: Response) => {
             res.redirect("/success");
         }).catch(error => {
             console.log(error);
-            res.render("error");
+            res.redirect("/error");
         });
 };
     export const matlabPostSubmit = (req: Request, res: Response) => {
@@ -52,7 +52,7 @@ export const IOSPostSubmit = (req: Request, res: Response) => {
             res.redirect("/success");
         }).catch(error => {
             console.log(error);
-            res.render("error");
+            res.redirect("/error");
         });
 };
 export const icEnginePostSubmit = (req: Request, res: Response) => {
@@ -75,7 +75,7 @@ export const icEnginePostSubmit = (req: Request, res: Response) => {
             res.redirect("/success");
         }).catch(error => {
             console.log(error);
-            res.render("error");
+            res.redirect("/error");
         });
 };
 
