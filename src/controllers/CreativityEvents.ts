@@ -37,7 +37,7 @@ export const doodlingPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("error");
+            res.redirect("/error");
         });
 };
 
@@ -54,7 +54,7 @@ export const artExpoPostSubmit = (req: Request, res: Response) => {
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("error");
+            res.redirect("/error");
         });
 };
 
