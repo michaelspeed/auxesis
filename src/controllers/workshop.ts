@@ -12,11 +12,13 @@ export const index = (req: Request, res: Response) => {
 export const IOSPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
+    const number = req.body.number;
     console.log(req);
     defaultApp.firestore().collection("Android&IOS")
         .add({
             name,
             email,
+            number
         }).then(async (value) => {
             await sgMail.setApiKey(SENDGRID_API_KEY);
             const msg = {
@@ -35,11 +37,13 @@ export const IOSPostSubmit = (req: Request, res: Response) => {
     export const matlabPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
+    const number = req.body.number;
     console.log(req);
     defaultApp.firestore().collection("matlab")
         .add({
             name,
             email,
+            number
         }).then(async (value) => {
             await sgMail.setApiKey(SENDGRID_API_KEY);
             const msg = {
@@ -58,11 +62,13 @@ export const IOSPostSubmit = (req: Request, res: Response) => {
 export const icEnginePostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
+    const number = req.body.number;
     console.log(req);
     defaultApp.firestore().collection("icEngine")
         .add({
             name,
             email,
+            number
         }).then(async (value) => {
             await sgMail.setApiKey(SENDGRID_API_KEY);
             const msg = {
