@@ -130,7 +130,7 @@ export const goStreetzPostSubmit = (req: Request, res: Response) => {
             res.redirect("/success");
         }).catch(error => {
             console.log(error);
-            res.render("error");
+            res.redirect("/error");
         });
     };
 export const euphonicsPostSubmit = (req: Request, res: Response) => {
@@ -207,7 +207,7 @@ export const rootsPostSubmit = (req: Request, res: Response) => {
             res.redirect("/success");
         }).catch(error => {
             console.log(error);
-            res.render("error");
+            res.render("/error");
         });
 };
 
