@@ -14,12 +14,12 @@ export const index = (req: Request, res: Response) => {
 export const postSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
-    const trans = req.body.trans;
+    const phone = req.body.phone;
     defaultApp.firestore().collection("aveza")
         .add({
             name,
             email,
-            trans
+            phone
         }).then(async (value) => {
         await sgMail.setApiKey(SENDGRID_API_KEY);
         const msg = {
@@ -32,7 +32,7 @@ export const postSubmit = (req: Request, res: Response) => {
         res.redirect("/success");
     }).catch(error => {
         console.log(error);
-        res.render("error");
+        res.redirect("/error");
     });
 };
 
