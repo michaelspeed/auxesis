@@ -19,15 +19,16 @@ export const IOSPostSubmit = (req: Request, res: Response) => {
             name,
             email,
             phone
-        }).then(async (value) => {
-            await sgMail.setApiKey(SENDGRID_API_KEY);
-            const msg = {
-                to: email,
-                from: "registration@atmiyo.technology",
-                subject: "Registration Successful",
-                html: MAIN_HTML,
-            };
-            await sgMail.send(msg);
+        }).then(() => {
+            // async (value) => {
+            // await sgMail.setApiKey(SENDGRID_API_KEY);
+            // const msg = {
+            //     to: email,
+            //     from: "registration@atmiyo.technology",
+            //     subject: "Registration Successful",
+            //     html: MAIN_HTML,
+            // };
+            // await sgMail.send(msg);
             res.redirect("/success");
         }).catch(error => {
             console.log(error);
@@ -44,15 +45,16 @@ export const IOSPostSubmit = (req: Request, res: Response) => {
             name,
             email,
             phone
-        }).then(async (value) => {
-            await sgMail.setApiKey(SENDGRID_API_KEY);
-            const msg = {
-                to: email,
-                from: "registration@atmiyo.technology",
-                subject: "Registration Successful",
-                html: MAIN_HTML,
-            };
-            await sgMail.send(msg);
+        }).then(() => {
+            // async (value) => {
+            // await sgMail.setApiKey(SENDGRID_API_KEY);
+            // const msg = {
+            //     to: email,
+            //     from: "registration@atmiyo.technology",
+            //     subject: "Registration Successful",
+            //     html: MAIN_HTML,
+            // };
+            // await sgMail.send(msg);
             res.redirect("/success");
         }).catch(error => {
             console.log(error);
@@ -63,7 +65,7 @@ export const icEnginePostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
     const phone = req.body.phone;
-    const slot = req.body.first
+    const slot = req.body.first;
     console.log(req);
     defaultApp.firestore().collection("icEngine")
         .add({
@@ -71,15 +73,16 @@ export const icEnginePostSubmit = (req: Request, res: Response) => {
             email,
             phone,
             slot
-        }).then(async (value) => {
-            await sgMail.setApiKey(SENDGRID_API_KEY);
-            const msg = {
-                to: email,
-                from: "registration@atmiyo.technology",
-                subject: "Registration Successful",
-                html: MAIN_HTML,
-            };
-            await sgMail.send(msg);
+        }).then( () => {
+            // async (value) => {
+            // await sgMail.setApiKey(SENDGRID_API_KEY);
+            // const msg = {
+            //     to: email,
+            //     from: "registration@atmiyo.technology",
+            //     subject: "Registration Successful",
+            //     html: MAIN_HTML,
+            // };
+            // await sgMail.send(msg);
             res.redirect("/success");
         }).catch(error => {
             console.log(error);

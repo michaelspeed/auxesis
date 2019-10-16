@@ -15,20 +15,23 @@ export const postSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
     const phone = req.body.phone;
+    const bFile = req.body.bFile;
     defaultApp.firestore().collection("aveza")
         .add({
             name,
             email,
-            phone
-        }).then(async (value) => {
-        await sgMail.setApiKey(SENDGRID_API_KEY);
-        const msg = {
-            to: email,
-            from: "registration@atmiyo.technology",
-            subject: "Registration Successful",
-            html: MAIN_HTML,
-        };
-        await sgMail.send(msg);
+            phone,
+            bFile
+        }).then(() => {
+            // async (value) => {
+            // await sgMail.setApiKey(SENDGRID_API_KEY);
+            // const msg = {
+            //     to: email,
+            //     from: "registration@atmiyo.technology",
+            //     subject: "Registration Successful",
+            //     html: MAIN_HTML,
+            // };
+            // await sgMail.send(msg);
         res.redirect("/success");
     }).catch(error => {
         console.log(error);
@@ -45,15 +48,16 @@ export const devPostSubmit = (req: Request, res: Response) => {
             name,
             email,
             project,
-        }).then(async (value) => {
-            await sgMail.setApiKey(SENDGRID_API_KEY);
-            const msg = {
-                to: email,
-                from: "registration@atmiyo.technology",
-                subject: "Registration Successful",
-                html: MAIN_HTML,
-            };
-            await sgMail.send(msg);
+        }).then(() => {
+            // async (value) => {
+            // await sgMail.setApiKey(SENDGRID_API_KEY);
+            // const msg = {
+            //     to: email,
+            //     from: "registration@atmiyo.technology",
+            //     subject: "Registration Successful",
+            //     html: MAIN_HTML,
+            // };
+            // await sgMail.send(msg);
             res.redirect("/success");
         }).catch(error => {
             console.log(error);
@@ -68,15 +72,16 @@ export const roboAssultPostSubmit = (req: Request, res: Response) => {
         .add({
             name,
             email
-        }).then(async (value) => {
-            await sgMail.setApiKey(SENDGRID_API_KEY);
-            const msg = {
-                to: email,
-                from: "registration@atmiyo.technology",
-                subject: "Registration Successful",
-                html: MAIN_HTML,
-            };
-            await sgMail.send(msg);
+        }).then(() => {
+            // async (value) => {
+            // await sgMail.setApiKey(SENDGRID_API_KEY);
+            // const msg = {
+            //     to: email,
+            //     from: "registration@atmiyo.technology",
+            //     subject: "Registration Successful",
+            //     html: MAIN_HTML,
+            // };
+            // await sgMail.send(msg);
             res.redirect("/success");
         }).catch(error => {
             console.log(error);
@@ -92,15 +97,16 @@ export const roboSoccerPostSubmit = (req: Request, res: Response) => {
         .add({
             name,
             email
-        }).then(async (value) => {
-            await sgMail.setApiKey(SENDGRID_API_KEY);
-            const msg = {
-                to: email,
-                from: "registration@atmiyo.technology",
-                subject: "Registration Successful",
-                html: MAIN_HTML,
-            };
-            await sgMail.send(msg);
+        }).then(() => {
+            // async (value) => {
+            // await sgMail.setApiKey(SENDGRID_API_KEY);
+            // const msg = {
+            //     to: email,
+            //     from: "registration@atmiyo.technology",
+            //     subject: "Registration Successful",
+            //     html: MAIN_HTML,
+            // };
+            // await sgMail.send(msg);
             res.redirect("/success");
         }).catch(error => {
             console.log(error);
@@ -115,15 +121,16 @@ export const SurvivorBotPostSubmit = (req: Request, res: Response) => {
         .add({
             name,
             email
-        }).then(async (value) => {
-            await sgMail.setApiKey(SENDGRID_API_KEY);
-            const msg = {
-                to: email,
-                from: "registration@atmiyo.technology",
-                subject: "Registration Successful",
-                html: MAIN_HTML,
-            };
-            await sgMail.send(msg);
+        }).then(() => {
+            // async (value) => {
+            // await sgMail.setApiKey(SENDGRID_API_KEY);
+            // const msg = {
+            //     to: email,
+            //     from: "registration@atmiyo.technology",
+            //     subject: "Registration Successful",
+            //     html: MAIN_HTML,
+            // };
+            // await sgMail.send(msg);
             res.redirect("/success");
         }).catch(error => {
             console.log(error);
@@ -139,15 +146,16 @@ export const cubiconPostSubmit = (req: Request, res: Response) => {
         .add({
             name,
             email,
-        }).then(async (value) => {
-            await sgMail.setApiKey(SENDGRID_API_KEY);
-            const msg = {
-                to: email,
-                from: "registration@atmiyo.technology",
-                subject: "Registration Successful",
-                html: MAIN_HTML,
-            };
-            await sgMail.send(msg);
+        }).then(() => {
+            // async (value) => {
+            // await sgMail.setApiKey(SENDGRID_API_KEY);
+            // const msg = {
+            //     to: email,
+            //     from: "registration@atmiyo.technology",
+            //     subject: "Registration Successful",
+            //     html: MAIN_HTML,
+            // };
+            // await sgMail.send(msg);
             res.redirect("/success");
         }).catch(error => {
             console.log(error);
@@ -164,15 +172,16 @@ export const techExPostSubmit = (req: Request, res: Response) => {
             name,
             email,
             project
-        }).then(async (value) => {
-            await sgMail.setApiKey(SENDGRID_API_KEY);
-            const msg = {
-                to: email,
-                from: "registration@atmiyo.technology",
-                subject: "Registration Successful",
-                html: MAIN_HTML,
-            };
-            await sgMail.send(msg);
+        }).then(() => {
+            // async (value) => {
+            // await sgMail.setApiKey(SENDGRID_API_KEY);
+            // const msg = {
+            //     to: email,
+            //     from: "registration@atmiyo.technology",
+            //     subject: "Registration Successful",
+            //     html: MAIN_HTML,
+            // };
+            // await sgMail.send(msg);
             res.redirect("/success");
         }).catch(error => {
             console.log(error);
