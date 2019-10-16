@@ -44,6 +44,8 @@ import * as webDevelopersControllers from "./controllers/webDevelopers";
 import * as ErrorControllers from "./controllers/Error";
 import * as successControllers from "./controllers/Success";
 
+import * as accomodationsController from "./controllers/accomodation";
+
 
 
 
@@ -510,6 +512,10 @@ app.post("/technicalevents/techExhibition", TechnicalControllers.techExPostSubmi
 
 
 app.get("/webdesigners", webDevelopersControllers.index);
+
+app.get("/accomodation", accomodationsController.index);
+app.post("/accomodation/for_boys_processing", accomodationsController.boysPostSubmit);
+app.post("/accomodation/for_girls_propcessing", accomodationsController.girlsPostSubmit);
 
 
 

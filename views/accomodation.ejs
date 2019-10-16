@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#e8293b"/>
+<meta name="HandheldFriendly" content="true" />
+<title>Auxesis | Accomodation</title>
+<meta name="author" content="Auxesis">
+<meta name="description" content="Auxesis">
+<meta name="keywords" content="creative, works, showcase, portfolio, highlight, projects, modern, agency, digital, studio, css, animation, transition, freelancers">
+
+<!-- SOCIAL MEDIA META -->
+<meta property="og:description" content="Auxesis">
+<meta property="og:site_name" content="auxesis.in">
+<meta property="og:title" content="auxesis.in">
+<meta property="og:type" content="website">
+<meta property="og:url" content="auxesis.in">
+
+<!-- TWITTER META -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@auxesis">
+<meta name="twitter:creator" content="@auxesis">
+<meta name="twitter:title" content="Auxesis">
+<meta name="twitter:description" content="Auxesis">
+
+<!-- FAVICON FILES -->
+<link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
+<link href="ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
+<link href="ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
+<link href="ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon">
+<link href="ico/favicon.png" rel="shortcut icon">
+
+<!-- CSS FILES -->
+<%- include('./include/header.ejs') %>
+</head>
+<body>
+<div class="preloader">
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="inner" data-tilt data-tilt-perspective="2000">
+    <figure class="fadeInUp animated"> <img src="images/preloader.gif" alt="Image"> </figure>
+    <span class="typewriter" id="typewriter"></span> </div>
+  <!-- end inner -->
+</div>
+<!-- end preloader -->
+<div class="transition-overlay">
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+  <div class="layer"></div>
+</div>
+<%- include('./include/nav.ejs') %>
+<nav class="navbar">
+  <div class="left"> <a href="/">Auxesis</a> </div>
+  <div class="logo"> <a href="#"><img src="images/MainLogo.png" alt="Image"></a> </div>
+  <div class="right">
+    <ul class="language">
+      <li><a href="#">&nbsp</a></li>
+      <li><a href="#">&nbsp</a></li>
+    </ul>
+    <div class="hamburger-menu"><b>MENU</b>
+      <div class="hamburger" id="hamburger-menu"> <span></span> <span></span> <span></span> </div>
+    </div>
+  </div>
+</nav>
+<header class="page-header">
+    <div class="video-bg">
+        <img src="images/tech.jpg" alt="Image">
+    </div>
+  <div class="container">
+  	<h1>Accomodation</h1>
+  	<p>Come and join Us</p>
+  </div>
+  <aside class="left-side">
+      <ul>
+        <li><a href="https://www.facebook.com/Auxesis.DU">FACEBOOK</a></li>
+        <li><a href="https://www.instagram.com/auxesis.official/?hl=en">INSTAGRAM</a></li>
+        <li><a href="https://www.youtube.com/channel/UCoZupsJMM1BaCdfDS2-ra2A"">YOUTUBE</a></li>
+      </ul>
+    </aside>
+  <div class="scroll-down"><small>SCROLL DOWN</small><span></span></div>
+</header>
+<section class="works">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 wow fadeIn">
+      </div>
+      <div class="col-12">
+         
+        <div class="project-box wow fadeIn" data-bg="#ece6f4">
+          <figure>
+            <a href="images/aveja.jpeg" data-fancybox>
+            <img src="images/aveja.jpeg" alt="Image">
+            </a>
+          </figure>
+          <div class="content-box">
+            <div class="inner">
+               <a>7th-10th November</a>
+              <h3><span>Hostels</span>For Girls</h3>
+              <div class="custom-link wow fadeIn">
+                    <a href="#" data-toggle="modal" data-target="#exampleModalScrollableGirls">
+                        <div class="lines"> <span></span> <span></span> </div>
+                        <b>Register Here</b>
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-box wow fadeIn" data-bg="#ebf8f3">
+          <figure>
+            <a href="images/roboSoccer.jpg" data-fancybox>
+            <img src="images/roboSoccer.jpg" alt="Image">
+           </a>
+          </figure>
+          <div class="content-box">
+              <div class="inner">
+                <a>7th-10th November</a>
+                  <h3><span>Tents</span>For Boys</h3>
+                  <div class="custom-link wow fadeIn">
+                      <a href="#" data-toggle="modal" data-target="#exampleModalScrollableBoys">
+                          <div class="lines"> <span></span> <span></span> </div>
+                          <!-- end lines -->
+                          <b>Register Here</b>
+                      </a>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modal fade" id="exampleModalScrollableBoys" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h4>boys Accomodations</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="fa fa-close"></i>
+            </button>
+          </div>
+
+          <form action="/accomodation/for_boys_processing"  method="POST" >
+              <div class="modal-body">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Name</span>
+                  </div>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="your Name" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" style="font-family: 'Lato', sans-serif;" id="basic-addon1">Email</span>
+                  </div>
+                  <input type="text" class="form-control" id="email" name="email" placeholder="your email" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" style="font-family: 'Lato', sans-serif;" id="basic-addon1" >Contact Number</span>
+                  </div>
+                  <input type="text" class="form-control" id="phone" name="phone" placeholder="your contact number" aria-label="Username" aria-describedby="basic-addon1" required = 'required'>
+                </div>
+                <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" style="font-family: 'Lato', sans-serif;" id="basic-addon1" >Number of People</span>
+                        </div>
+                        <input type="text" class="form-control" id="candidateNumber" name="candidateNumber" placeholder="total number of participant" aria-label="Username" aria-describedby="basic-addon1" required = 'required'>
+                      </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" style="font-family: 'Lato', sans-serif;" id="basic-addon1" >Check In Date</span>
+                    </div>
+                    <input type="date" class="form-control" id="checkIn" name="checkIn" placeholder="check in date" aria-label="Username" aria-describedby="basic-addon1" required = 'required'>
+                </div>
+                <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" style="font-family: 'Lato', sans-serif;" id="basic-addon1" >Check Out Date</span>
+                        </div>
+                        <input type="date" class="form-control" id="checkOut" name="checkOut" placeholder="check out date" aria-label="Username" aria-describedby="basic-addon1" required = 'required'>
+                    </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-outline-primary">Register</button>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalScrollableGirls" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h4>Girls Accomodations</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="fa fa-close"></i>
+                  </button>
+                </div>
+      
+                <form action="/accomodation/for_girls_propcessing"  method="POST" >
+                    <div class="modal-body">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">Name</span>
+                        </div>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="your Name" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" style="font-family: 'Lato', sans-serif;" id="basic-addon1">Email</span>
+                        </div>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="your email" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" style="font-family: 'Lato', sans-serif;" id="basic-addon1" >Contact Number</span>
+                        </div>
+                        <input type="text" class="form-control" id="phone" name="phone" placeholder="your contact number" aria-label="Username" aria-describedby="basic-addon1" required = 'required'>
+                      </div>
+                      <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" style="font-family: 'Lato', sans-serif;" id="basic-addon1" >Number of People</span>
+                              </div>
+                              <input type="text" class="form-control" id="candidateNumber" name="candidateNumber" placeholder="total number of participant" aria-label="Username" aria-describedby="basic-addon1" required = 'required'>
+                            </div>
+                      <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" style="font-family: 'Lato', sans-serif;" id="basic-addon1" >Check In Date</span>
+                          </div>
+                          <input type="date" class="form-control" id="checkIn" name="checkIn" placeholder="check in date" aria-label="Username" aria-describedby="basic-addon1" required = 'required'>
+                      </div>
+                      <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" style="font-family: 'Lato', sans-serif;" id="basic-addon1" >Check Out Date</span>
+                              </div>
+                              <input type="date" class="form-control" id="checkOut" name="checkOut" placeholder="check out date" aria-label="Username" aria-describedby="basic-addon1" required = 'required'>
+                          </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-outline-primary">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </div>
+
+
+<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalScrollableTitle">Coming Soon</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <li>
+                Currently this link is still in development phase, as we are updating our site to a 
+                completely new and fresh look. Please come back after a couple of days. 
+                <b style="color:brown"> We are sorry for this inconvenience.</b>
+            </li>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- regsistrations -->
+<!-- footer start  -->
+<%- include('./include/footer.ejs') %>
+<!-- end footer -->
+
+<audio id="hamburger-hover" src="audio/link.mp3" preload="auto"></audio>
+
+<!-- JS FILES -->
+<%- include('./include/scripts.ejs') %>
+</body></html>
