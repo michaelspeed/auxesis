@@ -84,54 +84,76 @@
     </aside>
   <div class="scroll-down"><small>SCROLL DOWN</small><span></span></div>
 </header>
-<section class="works">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 wow fadeIn">
-      </div>
-      <div class="col-12">
-         
-        <div class="project-box wow fadeIn" data-bg="#ece6f4">
-          <figure>
-            <a href="images/girlsHostel.jpg" data-fancybox>
-            <img src="images/girlsHostel.jpg" alt="Image">
-            </a>
-          </figure>
-          <div class="content-box">
-            <div class="inner">
-              <h3><span>Hostels</span>For Girls</h3>
-              <div class="custom-link wow fadeIn">
-                    <a href="#" data-toggle="modal" data-target="#exampleModalScrollableGirls">
-                        <div class="lines"> <span></span> <span></span> </div>
-                        <b>Book Now</b>
-                    </a>
+
+<section class="news">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="post wow fadeIn">
+                    <figure class="post-image">
+                        <img src="images/girlsHostel.jpg" alt="Image">
+                    </figure>
+                    <div class="post-content">
+                        <div class="inner">
+                            <h3 class="post-title">
+                                <a>Hostels For Girls</a>
+                            </h3>
+                            <p class="post-text">
+                                <span>Details:</span>
+                                    <li>Food(Breakfast,Lunch,Dinner).</li>
+                                    <li> Lodging and mattress will be provided.</li>
+                                    <li>Common bathroom</li><br>
+                            </p>
+                        </div>
+                        <div class="custom-link wow fadeIn">
+                            <a href="#" data-toggle="modal" data-target="#exampleModalScrollableGirls">
+                                <div class="lines"> <span></span> <span></span> </div>
+                                <br>
+                                <br>
+                                <b>Register Here</b>
+                            </a>
+                      </div>
+                    </div>
+                </div>
+                
+
+                <div class="post wow fadeIn">
+                    <figure class="post-image">
+                        <img src="images/boysTents.jpg" alt="Image">
+                    </figure>
+                    <div class="post-content">
+                        <div class="inner">
+                            <h3 class="post-title">
+                                <a>
+                                   Tents For Boys
+                                </a>
+                            </h3>
+                            <p class="post-text">
+                                <span>Details:</span>
+                                    <li>Food(Breakfast,Lunch,Dinner).</li>
+                                    <li> Lodging and mattress will be provided.</li>
+                                    <li>Common bathroom</li><br>
+                            </p>
+                        </div>
+                        <div class="custom-link wow fadeIn">
+                                <a href="#" data-toggle="modal" data-target="#exampleModalScrollableBoys">
+                                    <div class="lines"> <span></span> <span></span> </div>
+                                    <br>
+                                    <br>
+                                    <b>Register Here</b>
+                                </a>
+                          </div>
+                    </div>
+                </div>
+               
+
+                <div class="pagination fadeIn">
+                    <a href="#"></a>
+                    <a href="#"></a>
                 </div>
             </div>
-          </div>
         </div>
-
-        <div class="project-box wow fadeIn" data-bg="#ebf8f3">
-          <figure>
-            <a href="images/boysTents.jpg" data-fancybox>
-            <img src="images/boysTents.jpg" alt="Image">
-           </a>
-          </figure>
-          <div class="content-box">
-              <div class="inner">
-                  <h3><span>Tents</span>For Boys</h3>
-                  <div class="custom-link wow fadeIn">
-                      <a href="#" data-toggle="modal" data-target="#exampleModalScrollableBoys">
-                          <div class="lines"> <span></span> <span></span> </div>
-                          <!-- end lines -->
-                          <b>Book Now</b>
-                      </a>
-                  </div>
-                </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </section>
 
 <div class="modal fade" id="exampleModalScrollableBoys" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
@@ -182,6 +204,13 @@
                         </div>
                         <input type="date" class="form-control" id="checkOut" name="checkOut" placeholder="check out date" aria-label="Username" aria-describedby="basic-addon1" required = 'required'>
                     </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">Fee</span>
+                        </div>
+                        <input type="text" class="form-control" id="regfees" name="regfees" placeholder="100Rs per day"
+                         aria-label="Username" aria-describedby="basic-addon1" readonly>
+                      </div><div>Payment will be accepted offline</div> 
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
@@ -240,6 +269,13 @@
                               </div>
                               <input type="date" class="form-control" id="checkOut" name="checkOut" placeholder="check out date" aria-label="Username" aria-describedby="basic-addon1" required = 'required'>
                           </div>
+                          <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Fee</span>
+                              </div>
+                              <input type="text" class="form-control" id="regfees" name="regfees" placeholder="100Rs"
+                               aria-label="Username" aria-describedby="basic-addon1" readonly>
+                            </div><div>Payment will be accepted offline</div> 
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
