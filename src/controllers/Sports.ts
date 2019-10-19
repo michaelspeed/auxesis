@@ -41,12 +41,12 @@ export const thirdPocketPostSubmit = (req: Request, res: Response) => {
         });
 };
 
-export const tennisPostSubmit = (req: Request, res: Response) => {
+export const badmintonPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
     const phoneNum = req.body.cn;
     console.log(req);
-    defaultApp.firestore().collection("tennis")
+    defaultApp.firestore().collection("badminton")
         .add({
             name,
             email,
