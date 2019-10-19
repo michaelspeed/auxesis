@@ -461,6 +461,8 @@ app.get("/creativity", creativityEventsControllers.index);
 app.post("/creativity/canvas", creativityEventsControllers.canvasPostSubmit);
 app.post("/creativity/doodling", creativityEventsControllers.doodlingPostSubmit);
 app.post("/creativity/artexpo", creativityEventsControllers.artExpoPostSubmit);
+app.post("/creativity/talenthunt", creativityEventsControllers.TalentgPostSubmit);
+
 
 
 app.get("/cultural", CulturelEventsControllers.index);

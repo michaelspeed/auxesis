@@ -101,6 +101,39 @@
         <div class="row">
             <div class="col-12">
 
+
+              <div class="post wow fadeIn">
+                <figure class="post-image">
+                    <img src="images/snapshot.jpeg" alt="Image">
+                </figure>
+                <!-- end news-image -->
+                <div class="post-content">
+                    <div class="inner">
+                        <h3 class="post-title"><a href="#">Talent Hunt</a></h3>
+                        <div class="post-author"><img src="images/dummy.png" alt="Image">
+                            <span>conducted by <a href="#">Susmita Saikia</a></span></div>
+                        <p class="post-text">
+                           <!-- <li>Email:meetgaurob@gmail.com</li> -->
+                           <li>Phone number : ‎+91 78969 03017</li>
+                           <!-- <li></li> -->
+
+                        </p>
+                        <div class="custom-link wow fadeIn">
+                                <a href="#" data-toggle="modal" data-target="#exampleModalScrollableTalent">
+                                  <div class="lines"> <span></span> <span></span> </div>
+                                  <b>Rules</b>
+                                </a>
+                        </div>
+                        <div class="custom-link wow fadeIn">
+                            <a href="#" data-toggle="modal" data-target="#exampleModalScrollableTalentRegistration">
+                              <div class="lines"> <span></span> <span></span> </div>
+                              <b>Registration</b>
+                            </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
                 <div class="post wow fadeIn">
                     <figure class="post-image">
                         <img src="images/doodleArt.jpg" alt="Image">
@@ -220,6 +253,87 @@
     </div>
     <!-- end container -->
 </section>
+
+<div class="modal fade" id="exampleModalScrollableTalent" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalScrollableTitle">Rules</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+              <div class="modal-body">
+                <div>
+                  <li>Register in the website and pay the registration fee(Rs100) via google pay( SUSMITA SAIKIA:+91 78969 03017) with the event name as the message.
+                    Display your talent by either tagging Auxesis Instagram Page/Facebook or Whatsapp.
+                  </li>
+                  <li>The competition is based on any kind of talent.Individual as well as group performances are allowed</li>
+                  <li>Performing time is 3-5 minutes.For fields like photography,selfie,paintings etc. tag/post on facebook,Instagram page of Auxesis.
+                    One can also send on whatsapp( SUSMITA SAIKIA:+91 78969 03017)
+                  </li>
+                  <li>One participant can showcase only in one field.Open for all age group</li>
+                  <li>No abusive contents allowed</li>
+                  <li>Committee's decision will be full and final</li>
+                  <li>Prize worth of Rs3000 will be given to the winner including exciting gift hampers along with authorised certificates.Also,winner of every specific field will get free entry pass to the DJ night,
+                    free registration fee to any one event of Auxesis V9.O,exciting gift hampers along with authorised certificates
+                  </li>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+      </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalScrollableTalentRegistration" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalScrollableTitle">Talent Hunt Registrations</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <form action="/creativity/talenthunt" method="POST">
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">Name</span>
+                        </div>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Address</span>
+                          </div>
+                          <input type="text" class="form-control" id="address" name="address" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">Contact Number</span>
+                            </div>
+                            <input type="text" class="form-control" id="cn" name="cn" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                      <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Registration Fee</span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="100Rs" aria-label="Username" aria-describedby="basic-addon1" readonly>
+                          <br>
+                        </div>
+                        <p> Paymet will be accepted via Google pay/offline</p>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 <div class="modal fade" id="exampleModalScrollableDoodle" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable" role="document">

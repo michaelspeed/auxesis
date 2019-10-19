@@ -58,6 +58,23 @@ export const artExpoPostSubmit = (req: Request, res: Response) => {
         });
 };
 
+export const TalentgPostSubmit = (req: Request, res: Response) => {
+    const name = req.body.name;
+    const address = req.body.address;
+    const phoneNum = req.body.cn;
+    console.log(req);
+    defaultApp.firestore().collection("TalentHunt")
+        .add({
+            name,
+            address,
+            phoneNum
+        }).then(value => {
+            res.redirect("/success");
+        }).catch(error => {
+            res.redirect("/error");
+        });
+};
+
 
 
 
