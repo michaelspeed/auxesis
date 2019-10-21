@@ -462,6 +462,7 @@ app.post("/creativity/canvas", creativityEventsControllers.canvasPostSubmit);
 app.post("/creativity/doodling", creativityEventsControllers.doodlingPostSubmit);
 app.post("/creativity/artexpo", creativityEventsControllers.artExpoPostSubmit);
 app.post("/creativity/talenthunt", creativityEventsControllers.TalentgPostSubmit);
+app.post("/creativity/snapshot", creativityEventsControllers.SnapshotPostSubmit);
 
 
 
