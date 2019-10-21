@@ -112,10 +112,7 @@
           <div class="content-box">
              <div class="inner">
               <h3><span>War</span>Words</h3>
-              <li>Date:8th November</li>
-              <li>Venue:Indira Miri</li>
-              <li>Prize worth Rs 10,000</li>
-              <li>Topic:Effect on Indian Economy due to privatization on PSU's</li>
+              
                 <div class="custom-link wow fadeIn">
                     <a href="#" data-toggle="modal" data-target="#exampleModalScrollableWarWords">
                         <div class="lines"> <span></span> <span></span> </div>
@@ -148,15 +145,16 @@
                         <b>Register Here</b>
                     </a>
                 </div>
-                <div class="custom-link wow fadeIn">
-                    <a href="#" data-toggle="modal" data-target="#exampleModalScrollableVibgyorRules">
-                        <div class="lines"> <span></span> <span></span> </div>
-                        <!-- end lines -->
-                        <b>Rules</b>
-                    </a>
-                </div>
+                <br>
+            <div class="custom-link wow fadeIn">
+              <a href="#" data-toggle="modal" data-target="#exampleModalScrollableVibgyorRules">
+                  <div class="lines"> <span></span> <span></span> </div>
+                  <b>Rules</b>
+              </a>
+          </div>
               <!-- end custom-link --> 
             </div>
+            
             <!-- end inner --> 
           </div>
           <!-- end content-box --> 
@@ -197,11 +195,19 @@
             <div class="inner">
               <h3><span>Blink</span></h3>
               <div class="custom-link wow fadeIn">
-                    <a href="#" data-toggle="modal" data-target="#exampleModalScrollable">
+                    <a href="#" data-toggle="modal" data-target="#exampleModalScrollableBlink">
                         <div class="lines"> <span></span> <span></span> </div>
                         <b>Register Here</b>
                     </a>
                 </div>
+                <br>
+                <br>
+                <div class="custom-link wow fadeIn">
+                  <a href="#" data-toggle="modal" data-target="#exampleModalScrollableBlinkRules">
+                      <div class="lines"> <span></span> <span></span> </div>
+                      <b>Details of Blink</b>
+                  </a>
+              </div>
               <!-- end custom-link --> 
             </div>
             <!-- end inner --> 
@@ -241,11 +247,6 @@
             <div class="content-box">
               <div class="inner">
                 <h3><span>Trivial</span>Paradox</h3>
-                <li>Date:10th November, Time:11 am</li>
-                <li>Quiz master : Somnath Chanda</li>
-                <li>Venue:Indira Miri Conference Hall</li>
-                <li>Maximum 2 members in a team.</li>
-                <li>Winner Prize worth: Rs20,000</li>
                 <div class="custom-link wow fadeIn">
                       <a href="#" data-toggle="modal" data-target="#exampleModalScrollableTrivial">
                           <div class="lines"> <span></span> <span></span> </div>
@@ -300,6 +301,12 @@
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
+            </div>
+            <div class="modal-body">
+                <li>Date:8th November</li>
+                <li>Venue:Indira Miri</li>
+                <li>Prize worth Rs 10,000</li>
+                <li>Topic : Effect on Indian Economy due to privatization on PSU's</li>
             </div>
             <form action="/schoolNmodule/warwords" method="POST">
               <div class="modal-body">
@@ -445,14 +452,14 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1">Name</span>
                     </div>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="your name" aria-label="Username" aria-describedby="basic-addon1">
                   </div>
 
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1">Email</span>
                     </div>
-                    <input type="text" class="form-control" id="email" name="email" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" id="email" name="email" placeholder="your email" aria-label="Username" aria-describedby="basic-addon1">
                   </div>
                   
                   <div class="input-group mb-3">
@@ -508,44 +515,30 @@
                       <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Name</span>
                       </div>
-                      <input type="text" class="form-control" id="name" name="name" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                      <input type="text" class="form-control" id="name" name="name" placeholder="your name" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
 
                     <div class="input-group mb-3">
                       <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Email</span>
                       </div>
-                      <input type="text" class="form-control" id="email" name="email" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                      <input type="text" class="form-control" id="email" name="email" placeholder="your name" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                           <span class="input-group-text" id="basic-addon1">Contact Number</span>
                         </div>
-                        <input type="text" class="form-control" id="cn" name="cn" placeholder="War Words" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control" id="cn" name="cn" placeholder="your contact number" aria-label="Username" aria-describedby="basic-addon1">
                       </div>
 
                       <div class="input-group mb-3">
                         <div class="input-group-prepend">
                           <span class="input-group-text" id="basic-addon1">Registration Fee</span>
                         </div>
-                        <input type="text" class="form-control" id="regfees" name="regfees" placeholder="1500Rs" aria-label="Username" aria-describedby="basic-addon1" readonly>
+                        <input type="text" class="form-control" id="regfees" name="regfees" placeholder="50Rs" aria-label="Username" aria-describedby="basic-addon1" readonly>
                       </div>
                       <div>Online Payment Coming Soon.</div>
-
-                    <!-- <div class="alert alert-success" role="alert">
-                        <h4 class="alert-heading">Payment Link: <a href="https://imjo.in/2anX3Q" style="color: #0c5460">Instamojo</a></h4>
-                        <p>Please open in a new tab!</p>
-                        <hr>
-                        <p class="mb-0">paste the paymentID in the following section</p>
-                    </div>
-
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">PaymentID</span>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Payment ID" aria-label="Username" aria-describedby="basic-addon1">
-                    </div> -->
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -629,19 +622,25 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
+          <div class="modal-body">
+            <li> Veneu: INDRA MIRI </li>
+            <li> DATE: 10 Nov time: 11 am </li>
+            <li> ENTRY FEE: RS 200(2 MEMBERS TEAM) </li>
+            <li> OUIZ MASTER : SOMNATH CHANDA </li>
+          </div>
           <form action="/schoolNmodule/trivial" method="POST">
               <div class="modal-body">
                   <div class="input-group mb-3">
                       <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Name</span>
                       </div>
-                      <input type="text" class="form-control" id="name" name="name" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                      <input type="text" class="form-control" id="name" name="name" placeholder="your name" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     <div class="input-group mb-3">
                       <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Email</span>
                       </div>
-                      <input type="text" class="form-control" id="name" name="email" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                      <input type="text" class="form-control" id="name" name="email" placeholder="your email" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     <div class="input-group mb-3">
                       <div class="input-group-prepend">
@@ -677,14 +676,14 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1">Name</span>
                     </div>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="your name" aria-label="Username" aria-describedby="basic-addon1">
                   </div>
 
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1">Email</span>
                     </div>
-                    <input type="text" class="form-control" id="email" name="email" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" id="email" name="email" placeholder="your email" aria-label="Username" aria-describedby="basic-addon1">
                   </div>
                   
                   <div class="input-group mb-3">
@@ -721,27 +720,38 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
+          <div class="modal-body">
+            <li> Date : 8,9,10 November </li>
+            <li> Venue:  Near vishnurabha and Activity Center </li>
+            <li> Entry Fee: RS 50 </li>
+            <li> PRIZE: GIFT HAMPERS WORTH RS 1000 </li>
+            <p>
+              Contact No : 
+                <li> JYOTISHMAN BORA: 8638031704 </li>
+                <li> JAHNOBI SONOWAL: 8011355489 </li>
+            </p>
+          </div>
           <form action="/schoolNmodule/cine" method="POST">
             <div class="modal-body">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1">Name</span>
                     </div>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="your name" aria-label="Username" aria-describedby="basic-addon1">
                   </div>
 
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1">Email</span>
                     </div>
-                    <input type="text" class="form-control" id="email" name="email" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control" id="email" name="email" placeholder="your email" aria-label="Username" aria-describedby="basic-addon1">
                   </div>
                   
                   <div class="input-group mb-3">
                       <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Contact Number</span>
                       </div>
-                      <input type="text" class="form-control" id="cn" name="cn" placeholder="War Words" aria-label="Username" aria-describedby="basic-addon1">
+                      <input type="text" class="form-control" id="cn" name="cn" placeholder="your contact number" aria-label="Username" aria-describedby="basic-addon1">
                   </div>
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
@@ -784,9 +794,46 @@
       </div>
     </div>
   </div>
-<!-- footer start  -->
+
+<div class="modal fade" id="exampleModalScrollableBlinkRules" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalScrollableTitle">Blink Rules</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <li> <b> VENUE: MECHANICAL DEPARTMENT  </b> </li>
+            <li> <b> Date: 9th November  </b> </li>
+            <li> <b> Entree Fee: 50Rs  </b> </li>
+            <li> <b> PRIZE: GIFT HAMPERS WORTH 1000</b> </li>
+            <li> <b> CONTACT NO. 1) SALMAAN : 8811885086 </b> <br> <b> AHSAN : 9101201995 </b> </li>
+            <p>
+              IT'S A SERIES OF GAMES AND CHALLENGES WHERE A PARTICIPANTS HAS TO UNDERGO BEFORE REACHING THE FINAL STAGE, THE INTERVIEW.
+              THE GAMES AND CHALLENGES THAT WILL BE INCLUDE ARE,
+                <li> SITUATION REACTION TEST </li>
+                <li> WORD ASSOCIATION TEST </li>
+                <li> DART GAME </li>
+                <li> HOLA HOP  </li>
+                <li> ON SPOT CHALLENGE  </li>
+                <li> SOLVE A RIDDLE  </li>
+                <li> THE ANSWER OF THE RIDDLE WILL LEAD THEM TO THE PLACE OF INTERVIEW.
+                  THE ONE WHO FINISHES ALL THE CHALLENGES SOONER WILL BE THE WINNER.  </li>
+            </p>
+        </div>  
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer start  -->
 <%- include('./include/footer.ejs') %>
 <!-- end footer -->
+
+
 
 <audio id="hamburger-hover" src="audio/link.mp3" preload="auto"></audio>
 
