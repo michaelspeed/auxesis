@@ -45,6 +45,7 @@ import * as ErrorControllers from "./controllers/Error";
 import * as successControllers from "./controllers/Success";
 
 import * as accomodationsController from "./controllers/accomodation";
+import * as androidVieController from "./controllers/adroitVie";
 
 
 
@@ -521,6 +522,8 @@ app.post("/accomodation/for_boys_processing", accomodationsController.boysPostSu
 app.post("/accomodation/for_girls_propcessing", accomodationsController.girlsPostSubmit);
 
 
+app.post("/androitVie/ml", androidVieController.MLPostSubmit);
+app.post("/androitVie/cs", androidVieController.CSPostSubmit);
 
 
 

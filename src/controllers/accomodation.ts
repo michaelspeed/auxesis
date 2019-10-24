@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { defaultApp, MAIN_HTML } from "../app";
+import { defaultApp } from "../app";
 
 export const index = (req: Request, res: Response) => {
     res.render("accomodation", {
