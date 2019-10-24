@@ -79,11 +79,13 @@ export const SnapshotPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
     const email = req.body.email;
     const phoneNum = req.body.cn;
+    const address = req.body.address;
     console.log(req);
     defaultApp.firestore().collection("snapshot")
         .add({
             name,
             email,
+            address,
             phoneNum
         }).then(value => {
             res.redirect("/success");
