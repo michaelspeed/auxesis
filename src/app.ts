@@ -523,7 +523,13 @@ app.post("/accomodation/for_girls_propcessing", accomodationsController.girlsPos
 
 
 app.post("/androitVie/ml", androidVieController.MLPostSubmit);
-app.post("/androitVie/cs", androidVieController.CSPostSubmit);
+app.post("/androitVie/fifa", androidVieController.FifaPostSubmit);
+app.post("/androitVie/pubG", androidVieController.pubGPostSubmit);
+app.post("/androitVie/csGo", androidVieController.CSPostSubmit);
+app.post("/androitVie/tekken", androidVieController.TekkenPostSubmit);
+
+
+
 
 
 
