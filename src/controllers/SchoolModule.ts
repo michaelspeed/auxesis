@@ -96,20 +96,18 @@ export const openMicPostSubmit = (req: Request, res: Response) => {
 };
 
 export const triavialwarWordsPostSubmit = (req: Request, res: Response) => {
-    const name = req.body.name;
-    const email = req.body.email;
-    const phoneNum = req.body.cn;
+    const tname = req.body.tname;
+    const phno = req.body.phno;
 
     console.log(req);
     defaultApp.firestore().collection("trivialParadox")
         .add({
-            name,
-            email,
-            phoneNum
+            tname,
+            phno
         }).then(value => {
             res.redirect("/success");
         }).catch(error => {
-            res.render("error");
+            res.render("/error");
         });
 };
 
