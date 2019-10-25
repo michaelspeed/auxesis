@@ -22,7 +22,7 @@ export const postSubmit = (req: Request, res: Response) => {
             email,
             phone,
             bFile
-        }).then(() => {
+        }).then(value => {
             // async (value) => {
             // await sgMail.setApiKey(SENDGRID_API_KEY);
             // const msg = {
@@ -48,7 +48,7 @@ export const devPostSubmit = (req: Request, res: Response) => {
             name,
             email,
             project,
-        }).then(() => {
+        }).then(value => {
             // async (value) => {
             // await sgMail.setApiKey(SENDGRID_API_KEY);
             // const msg = {
@@ -61,7 +61,7 @@ export const devPostSubmit = (req: Request, res: Response) => {
             res.redirect("/success");
         }).catch(error => {
             console.log(error);
-            res.render("error");
+            res.render("/error");
         });
     };
 export const roboAssultPostSubmit = (req: Request, res: Response) => {
@@ -72,7 +72,7 @@ export const roboAssultPostSubmit = (req: Request, res: Response) => {
         .add({
             name,
             email
-        }).then(() => {
+        }).then(value => {
             // async (value) => {
             // await sgMail.setApiKey(SENDGRID_API_KEY);
             // const msg = {
@@ -85,7 +85,7 @@ export const roboAssultPostSubmit = (req: Request, res: Response) => {
             res.redirect("/success");
         }).catch(error => {
             console.log(error);
-            res.render("error");
+            res.redirect("/error");
         });
     };
 
@@ -97,7 +97,7 @@ export const roboSoccerPostSubmit = (req: Request, res: Response) => {
         .add({
             name,
             email
-        }).then(() => {
+        }).then(value => {
             // async (value) => {
             // await sgMail.setApiKey(SENDGRID_API_KEY);
             // const msg = {
@@ -110,7 +110,7 @@ export const roboSoccerPostSubmit = (req: Request, res: Response) => {
             res.redirect("/success");
         }).catch(error => {
             console.log(error);
-            res.render("error");
+            res.redirect("/error");
         });
     };
 export const SurvivorBotPostSubmit = (req: Request, res: Response) => {
@@ -121,7 +121,7 @@ export const SurvivorBotPostSubmit = (req: Request, res: Response) => {
         .add({
             name,
             email
-        }).then(() => {
+        }).then(value => {
             // async (value) => {
             // await sgMail.setApiKey(SENDGRID_API_KEY);
             // const msg = {
@@ -134,7 +134,7 @@ export const SurvivorBotPostSubmit = (req: Request, res: Response) => {
             res.redirect("/success");
         }).catch(error => {
             console.log(error);
-            res.render("error");
+            res.redirect("/error");
         });
     };
 export const cubiconPostSubmit = (req: Request, res: Response) => {
@@ -146,7 +146,7 @@ export const cubiconPostSubmit = (req: Request, res: Response) => {
         .add({
             name,
             email,
-        }).then(() => {
+        }).then(value => {
             // async (value) => {
             // await sgMail.setApiKey(SENDGRID_API_KEY);
             // const msg = {
@@ -159,7 +159,7 @@ export const cubiconPostSubmit = (req: Request, res: Response) => {
             res.redirect("/success");
         }).catch(error => {
             console.log(error);
-            res.render("error");
+            res.redirect("/error");
         });
     };
 export const techExPostSubmit = (req: Request, res: Response) => {
@@ -172,7 +172,7 @@ export const techExPostSubmit = (req: Request, res: Response) => {
             name,
             email,
             project
-        }).then(() => {
+        }).then(value => {
             // async (value) => {
             // await sgMail.setApiKey(SENDGRID_API_KEY);
             // const msg = {
@@ -185,6 +185,6 @@ export const techExPostSubmit = (req: Request, res: Response) => {
             res.redirect("/success");
         }).catch(error => {
             console.log(error);
-            res.render("error");
+            res.redirect("/error");
         });
     };
