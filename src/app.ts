@@ -522,7 +522,7 @@ app.post("/accomodation/for_boys_processing", accomodationsController.boysPostSu
 app.post("/accomodation/for_girls_propcessing", accomodationsController.girlsPostSubmit);
 
 
-app.post("/androitVie/ml", androidVieController.MLPostSubmit);
+app.post("/androitVie/ml", androidVieController.4PostSubmit);
 app.post("/androitVie/fifa", androidVieController.FifaPostSubmit);
 app.post("/androitVie/pubG", androidVieController.pubGPostSubmit);
 app.post("/androitVie/csGo", androidVieController.CSPostSubmit);
