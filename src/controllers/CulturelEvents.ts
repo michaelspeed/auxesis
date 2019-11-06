@@ -188,7 +188,7 @@ export const chromaticWaltzPostSubmit = (req: Request, res: Response) => {
             res.redirect("/success");
         }).catch(error => {
             console.log(error);
-            res.render("error");
+            res.render("/error");
         });
     };
 export const rootsPostSubmit = (req: Request, res: Response) => {
