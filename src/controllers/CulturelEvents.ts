@@ -166,14 +166,14 @@ export const euphonicsPostSubmit = (req: Request, res: Response) => {
     };
 export const chromaticWaltzPostSubmit = (req: Request, res: Response) => {
     const name = req.body.name;
-    const email = req.body.email;
+    // const email = req.body.email;
     const phoneNum = req.body.cn;
 
     console.log(req);
     defaultApp.firestore().collection("chromaticWatls")
         .add({
             name,
-            email,
+            // email,
             phoneNum
         }).then(value => {
             // async (value) => {
@@ -188,7 +188,7 @@ export const chromaticWaltzPostSubmit = (req: Request, res: Response) => {
             res.redirect("/success");
         }).catch(error => {
             console.log(error);
-            res.render("/error");
+            res.redirect("/error");
         });
     };
 export const rootsPostSubmit = (req: Request, res: Response) => {
